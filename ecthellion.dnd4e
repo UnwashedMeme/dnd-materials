@@ -35,9 +35,9 @@
          Base ability scores (see stats of same name for final adjusted score)
       -->
       <AbilityScores legality="rules-legal">
-         <Strength score="16" />
-         <Constitution score="11" />
-         <Dexterity score="15" />
+         <Strength score="17" />
+         <Constitution score="10" />
+         <Dexterity score="14" />
          <Intelligence score="10" />
          <Wisdom score="14" />
          <Charisma score="8" />
@@ -50,22 +50,22 @@
          values to build them.
       -->
       <StatBlock>
-         <Stat name="Strength" value="16">
+         <Stat name="Strength" value="17">
             <alias name="Strength" />
             <alias name="str" />
-            <statadd value="16" />
+            <statadd value="17" />
          </Stat>
 
-         <Stat name="Constitution" value="11">
+         <Stat name="Constitution" value="10">
             <alias name="Constitution" />
             <alias name="con" />
-            <statadd value="11" />
+            <statadd value="10" />
          </Stat>
 
-         <Stat name="Dexterity" value="17">
+         <Stat name="Dexterity" value="16">
             <alias name="Dexterity" />
             <alias name="dex" />
-            <statadd value="15" />
+            <statadd value="14" />
             <statadd Level="1" value="2" charelem="9f737e0" />
          </Stat>
 
@@ -126,7 +126,7 @@
             <statadd type="Ability" Level="1" not-wearing="armor:heavy" value="1" statlink="Dexterity" abilmod="true" charelem="9f76fe0" />
             <statadd type="Ability" Level="1" not-wearing="armor:heavy" value="1" statlink="Intelligence" abilmod="true" charelem="9f76fe0" />
             <statadd type="Defensive" Level="1" wearing="DEFENSIVE:" value="1" charelem="9f76fe0" />
-            <statadd type="Armor" value="7" charelem="d5d6b98" />
+            <statadd type="Armor" value="7" charelem="d5d5d18" />
          </Stat>
 
          <Stat name="Death Saves Count" value="3">
@@ -141,7 +141,7 @@
             <statadd Level="3" value="1" charelem="9f760a0" />
          </Stat>
 
-         <Stat name="Hit Points" value="43">
+         <Stat name="Hit Points" value="42">
             <alias name="Hit Points" />
             <statadd type="Level 1" Level="1" value="1" statlink="Constitution" charelem="9f76fe0" />
             <statadd Level="1" value="1" statlink="_LEVEL-ONE-HPS" charelem="9f76fe0" />
@@ -183,7 +183,7 @@
             <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="9f76fe0" />
             <statadd type="Ability" Level="1" value="1" statlink="Dexterity" abilmod="true" charelem="9f76fe0" />
             <statadd type="Ability" Level="1" value="1" statlink="Intelligence" abilmod="true" charelem="9f76fe0" />
-            <statadd requires="!Armor Proficiency (Scale)" value="-2" charelem="d5d6b98" />
+            <statadd requires="!Armor Proficiency (Scale)" value="-2" charelem="d5d5d18" />
          </Stat>
 
          <Stat name="Will Defense" value="14">
@@ -521,7 +521,7 @@
          <Stat name="Speed" value="5">
             <alias name="Speed" />
             <statadd Level="1" value="6" charelem="9f76ba0" />
-            <statadd type="Armor" value="-1" charelem="d5d6b98" />
+            <statadd type="Armor" value="-1" charelem="d5d5d18" />
          </Stat>
 
          <Stat name="Average Height" value="0">
@@ -542,7 +542,7 @@
          <Stat name="Attack Rolls" value="0">
             <alias name="Attack Rolls" />
             <statadd Level="1" conditional="with opportunity attacks" value="1" statlink="Wisdom" abilmod="true" charelem="9f74320" />
-            <statadd requires="!Armor Proficiency (Scale)" value="-2" charelem="d5d6b98" />
+            <statadd requires="!Armor Proficiency (Scale)" value="-2" charelem="d5d5d18" />
          </Stat>
 
          <Stat name="one-hand:attack" value="1">
@@ -740,61 +740,61 @@
       -->
       <LootTally>
          <loot count="1" equip-count="1" >
-            <RulesElement name="Scale Armor" type="Armor" internal-id="ID_FMP_ARMOR_5" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=5&amp;ftype=2" charelem="d5d6b98" legality="rules-legal" >
+            <RulesElement name="Scale Armor" type="Armor" internal-id="ID_FMP_ARMOR_5" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=5&amp;ftype=2" charelem="d5d5d18" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="1" equip-count="0" >
-            <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="d5d6458" legality="rules-legal" >
+            <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="d5d6318" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="0" equip-count="0" >
-            <RulesElement name="Heavy Shield" type="Armor" internal-id="ID_FMP_ARMOR_8" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=8&amp;ftype=2" charelem="d5d6a98" legality="rules-legal" >
+            <RulesElement name="Heavy Shield" type="Armor" internal-id="ID_FMP_ARMOR_8" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=8&amp;ftype=2" charelem="d5d6798" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="1" equip-count="0" >
-            <RulesElement name="Adventurer&apos;s Kit" type="Gear" internal-id="ID_FMP_GEAR_1" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=1&amp;ftype=4" charelem="d5d6198" legality="rules-legal" >
+            <RulesElement name="Adventurer&apos;s Kit" type="Gear" internal-id="ID_FMP_GEAR_1" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=1&amp;ftype=4" charelem="d5d7818" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="1" equip-count="0" >
-            <RulesElement name="Light Shield" type="Armor" internal-id="ID_FMP_ARMOR_7" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=7&amp;ftype=2" charelem="d5d7798" legality="rules-legal" >
+            <RulesElement name="Light Shield" type="Armor" internal-id="ID_FMP_ARMOR_7" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=7&amp;ftype=2" charelem="d5d6b58" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="0" equip-count="0" >
-            <RulesElement name="Longbow" type="Weapon" internal-id="ID_FMP_WEAPON_40" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=40&amp;ftype=3" charelem="d5d73d8" legality="rules-legal" >
+            <RulesElement name="Longbow" type="Weapon" internal-id="ID_FMP_WEAPON_40" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=40&amp;ftype=3" charelem="d5d6758" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="1" equip-count="0" >
-            <RulesElement name="Arrows" type="Gear" internal-id="ID_FMP_GEAR_11" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=11&amp;ftype=4" charelem="d5d7618" legality="rules-legal" >
+            <RulesElement name="Arrows" type="Gear" internal-id="ID_FMP_GEAR_11" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=11&amp;ftype=4" charelem="d5d6398" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="0" equip-count="0" >
-            <RulesElement name="Greatbow" type="Weapon" internal-id="ID_FMP_WEAPON_72" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=72&amp;ftype=3" charelem="d5d5a98" legality="rules-legal" >
+            <RulesElement name="Greatbow" type="Weapon" internal-id="ID_FMP_WEAPON_72" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=72&amp;ftype=3" charelem="d5d5b18" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="1" equip-count="0" >
-            <RulesElement name="Shortbow" type="Weapon" internal-id="ID_FMP_WEAPON_39" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=39&amp;ftype=3" charelem="d5d74d8" legality="rules-legal" >
+            <RulesElement name="Shortbow" type="Weapon" internal-id="ID_FMP_WEAPON_39" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=39&amp;ftype=3" charelem="d5d70d8" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="0" equip-count="0" >
-            <RulesElement name="Potion of Healing (heroic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_1138" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=1138&amp;ftype=1" charelem="d5d65d8" legality="rules-legal" >
+            <RulesElement name="Potion of Healing (heroic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_1138" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=1138&amp;ftype=1" charelem="d5d5a58" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="1" equip-count="1" >
-            <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="d5d6218" legality="rules-legal" >
+            <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="d5d6098" legality="rules-legal" >
             </RulesElement>
-            <RulesElement name="Sunblade +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2395" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=2395&amp;ftype=1" charelem="d5d7818" legality="rules-legal" >
-            </RulesElement>
-         </loot>
-         <loot count="0" equip-count="0" >
-            <RulesElement name="Parrying dagger" type="Weapon" internal-id="ID_FMP_WEAPON_57" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=57&amp;ftype=3" charelem="d5d5918" legality="rules-legal" >
+            <RulesElement name="Sunblade +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2395" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=2395&amp;ftype=1" charelem="d5d6198" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="0" equip-count="0" >
-            <RulesElement name="Trident" type="Weapon" internal-id="ID_FMP_WEAPON_53" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=53&amp;ftype=3" charelem="d5d6518" legality="rules-legal" >
+            <RulesElement name="Parrying dagger" type="Weapon" internal-id="ID_FMP_WEAPON_57" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=57&amp;ftype=3" charelem="d5d6e18" legality="rules-legal" >
+            </RulesElement>
+         </loot>
+         <loot count="0" equip-count="0" >
+            <RulesElement name="Trident" type="Weapon" internal-id="ID_FMP_WEAPON_53" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=53&amp;ftype=3" charelem="d5d72d8" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="1" equip-count="0" >
-            <RulesElement name="Short sword" type="Weapon" internal-id="ID_FMP_WEAPON_20" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=20&amp;ftype=3" charelem="d5d6058" legality="rules-legal" >
+            <RulesElement name="Short sword" type="Weapon" internal-id="ID_FMP_WEAPON_20" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=20&amp;ftype=3" charelem="d5d59d8" legality="rules-legal" >
             </RulesElement>
          </loot>
       </LootTally>
@@ -810,8 +810,8 @@
             <specific name="Power Usage"> At-Will </specific>
             <specific name="Action Type"> Standard Action </specific>
             <Weapon name="Sunblade Longsword +1">
-               <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="d5d6218" legality="rules-legal" />
-               <RulesElement name="Sunblade +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2395" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=2395&amp;ftype=1" charelem="d5d7818" legality="rules-legal" />
+               <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="d5d6098" legality="rules-legal" />
+               <RulesElement name="Sunblade +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2395" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=2395&amp;ftype=1" charelem="d5d6198" legality="rules-legal" />
                <AttackBonus> 9 </AttackBonus>
                <Damage> 1d8+5 </Damage>
                <AttackStat> Strength </AttackStat>
@@ -831,7 +831,7 @@
                <Conditions> +2 to attack rolls with opportunity attacks - Combat Superiority. </Conditions>
             </Weapon>
             <Weapon name="Longsword">
-               <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="d5d6458" legality="rules-legal" />
+               <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="d5d6318" legality="rules-legal" />
                <AttackBonus> 8 </AttackBonus>
                <Damage> 1d8+4 </Damage>
                <AttackStat> Strength </AttackStat>
@@ -849,7 +849,7 @@
                <Conditions> +2 to attack rolls with opportunity attacks - Combat Superiority. </Conditions>
             </Weapon>
             <Weapon name="Short sword">
-               <RulesElement name="Short sword" type="Weapon" internal-id="ID_FMP_WEAPON_20" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=20&amp;ftype=3" charelem="d5d6058" legality="rules-legal" />
+               <RulesElement name="Short sword" type="Weapon" internal-id="ID_FMP_WEAPON_20" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=20&amp;ftype=3" charelem="d5d59d8" legality="rules-legal" />
                <AttackBonus> 8 </AttackBonus>
                <Damage> 1d6+3 </Damage>
                <AttackStat> Strength </AttackStat>
@@ -885,7 +885,7 @@
             <specific name="Power Usage"> At-Will </specific>
             <specific name="Action Type"> Standard Action </specific>
             <Weapon name="Shortbow">
-               <RulesElement name="Shortbow" type="Weapon" internal-id="ID_FMP_WEAPON_39" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=39&amp;ftype=3" charelem="d5d74d8" legality="rules-legal" />
+               <RulesElement name="Shortbow" type="Weapon" internal-id="ID_FMP_WEAPON_39" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=39&amp;ftype=3" charelem="d5d70d8" legality="rules-legal" />
                <AttackBonus> 6 </AttackBonus>
                <Damage> 1d8+3 </Damage>
                <AttackStat> Dexterity </AttackStat>
@@ -930,8 +930,8 @@
             <specific name="Power Usage"> At-Will </specific>
             <specific name="Action Type"> Standard Action </specific>
             <Weapon name="Sunblade Longsword +1">
-               <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="d5d6218" legality="rules-legal" />
-               <RulesElement name="Sunblade +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2395" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=2395&amp;ftype=1" charelem="d5d7818" legality="rules-legal" />
+               <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="d5d6098" legality="rules-legal" />
+               <RulesElement name="Sunblade +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2395" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=2395&amp;ftype=1" charelem="d5d6198" legality="rules-legal" />
                <AttackBonus> 9 </AttackBonus>
                <Damage> 1d8+5 </Damage>
                <AttackStat> Strength </AttackStat>
@@ -950,7 +950,7 @@
  </DamageComponents>
             </Weapon>
             <Weapon name="Longsword">
-               <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="d5d6458" legality="rules-legal" />
+               <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="d5d6318" legality="rules-legal" />
                <AttackBonus> 8 </AttackBonus>
                <Damage> 1d8+4 </Damage>
                <AttackStat> Strength </AttackStat>
@@ -967,7 +967,7 @@
  </DamageComponents>
             </Weapon>
             <Weapon name="Short sword">
-               <RulesElement name="Short sword" type="Weapon" internal-id="ID_FMP_WEAPON_20" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=20&amp;ftype=3" charelem="d5d6058" legality="rules-legal" />
+               <RulesElement name="Short sword" type="Weapon" internal-id="ID_FMP_WEAPON_20" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=20&amp;ftype=3" charelem="d5d59d8" legality="rules-legal" />
                <AttackBonus> 8 </AttackBonus>
                <Damage> 1d6+3 </Damage>
                <AttackStat> Strength </AttackStat>
@@ -1001,8 +1001,8 @@
             <specific name="Power Usage"> Encounter </specific>
             <specific name="Action Type"> Standard Action </specific>
             <Weapon name="Sunblade Longsword +1">
-               <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="d5d6218" legality="rules-legal" />
-               <RulesElement name="Sunblade +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2395" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=2395&amp;ftype=1" charelem="d5d7818" legality="rules-legal" />
+               <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="d5d6098" legality="rules-legal" />
+               <RulesElement name="Sunblade +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2395" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=2395&amp;ftype=1" charelem="d5d6198" legality="rules-legal" />
                <AttackBonus> 9 </AttackBonus>
                <Damage> 2d8+5 </Damage>
                <AttackStat> Strength </AttackStat>
@@ -1021,7 +1021,7 @@
  </DamageComponents>
             </Weapon>
             <Weapon name="Longsword">
-               <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="d5d6458" legality="rules-legal" />
+               <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="d5d6318" legality="rules-legal" />
                <AttackBonus> 8 </AttackBonus>
                <Damage> 2d8+4 </Damage>
                <AttackStat> Strength </AttackStat>
@@ -1038,7 +1038,7 @@
  </DamageComponents>
             </Weapon>
             <Weapon name="Short sword">
-               <RulesElement name="Short sword" type="Weapon" internal-id="ID_FMP_WEAPON_20" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=20&amp;ftype=3" charelem="d5d6058" legality="rules-legal" />
+               <RulesElement name="Short sword" type="Weapon" internal-id="ID_FMP_WEAPON_20" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=20&amp;ftype=3" charelem="d5d59d8" legality="rules-legal" />
                <AttackBonus> 8 </AttackBonus>
                <Damage> 2d6+3 </Damage>
                <AttackStat> Strength </AttackStat>
@@ -1072,8 +1072,8 @@
             <specific name="Power Usage"> Daily </specific>
             <specific name="Action Type"> Standard Action </specific>
             <Weapon name="Sunblade Longsword +1">
-               <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="d5d6218" legality="rules-legal" />
-               <RulesElement name="Sunblade +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2395" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=2395&amp;ftype=1" charelem="d5d7818" legality="rules-legal" />
+               <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="d5d6098" legality="rules-legal" />
+               <RulesElement name="Sunblade +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2395" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=2395&amp;ftype=1" charelem="d5d6198" legality="rules-legal" />
                <AttackBonus> 9 </AttackBonus>
                <Damage> 2d8+5 </Damage>
                <AttackStat> Strength </AttackStat>
@@ -1092,7 +1092,7 @@
  </DamageComponents>
             </Weapon>
             <Weapon name="Longsword">
-               <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="d5d6458" legality="rules-legal" />
+               <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="d5d6318" legality="rules-legal" />
                <AttackBonus> 8 </AttackBonus>
                <Damage> 2d8+4 </Damage>
                <AttackStat> Strength </AttackStat>
@@ -1109,7 +1109,7 @@
  </DamageComponents>
             </Weapon>
             <Weapon name="Short sword">
-               <RulesElement name="Short sword" type="Weapon" internal-id="ID_FMP_WEAPON_20" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=20&amp;ftype=3" charelem="d5d6058" legality="rules-legal" />
+               <RulesElement name="Short sword" type="Weapon" internal-id="ID_FMP_WEAPON_20" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=20&amp;ftype=3" charelem="d5d59d8" legality="rules-legal" />
                <AttackBonus> 8 </AttackBonus>
                <Damage> 2d6+3 </Damage>
                <AttackStat> Strength </AttackStat>
@@ -1148,8 +1148,8 @@
             <specific name="Power Usage"> At-Will </specific>
             <specific name="Action Type"> Standard Action </specific>
             <Weapon name="Sunblade Longsword +1">
-               <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="d5d6218" legality="rules-legal" />
-               <RulesElement name="Sunblade +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2395" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=2395&amp;ftype=1" charelem="d5d7818" legality="rules-legal" />
+               <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="d5d6098" legality="rules-legal" />
+               <RulesElement name="Sunblade +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2395" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=2395&amp;ftype=1" charelem="d5d6198" legality="rules-legal" />
                <AttackBonus> 9 </AttackBonus>
                <Damage> 1d8+5 </Damage>
                <AttackStat> Strength </AttackStat>
@@ -1168,7 +1168,7 @@
  </DamageComponents>
             </Weapon>
             <Weapon name="Longsword">
-               <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="d5d6458" legality="rules-legal" />
+               <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="d5d6318" legality="rules-legal" />
                <AttackBonus> 8 </AttackBonus>
                <Damage> 1d8+4 </Damage>
                <AttackStat> Strength </AttackStat>
@@ -1185,7 +1185,7 @@
  </DamageComponents>
             </Weapon>
             <Weapon name="Short sword">
-               <RulesElement name="Short sword" type="Weapon" internal-id="ID_FMP_WEAPON_20" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=20&amp;ftype=3" charelem="d5d6058" legality="rules-legal" />
+               <RulesElement name="Short sword" type="Weapon" internal-id="ID_FMP_WEAPON_20" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=20&amp;ftype=3" charelem="d5d59d8" legality="rules-legal" />
                <AttackBonus> 8 </AttackBonus>
                <Damage> 1d6+3 </Damage>
                <AttackStat> Strength </AttackStat>
@@ -1219,8 +1219,8 @@
             <specific name="Power Usage"> Encounter </specific>
             <specific name="Action Type"> Standard Action </specific>
             <Weapon name="Sunblade Longsword +1">
-               <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="d5d6218" legality="rules-legal" />
-               <RulesElement name="Sunblade +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2395" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=2395&amp;ftype=1" charelem="d5d7818" legality="rules-legal" />
+               <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="d5d6098" legality="rules-legal" />
+               <RulesElement name="Sunblade +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2395" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=2395&amp;ftype=1" charelem="d5d6198" legality="rules-legal" />
                <AttackBonus> 10 </AttackBonus>
                <Damage> 1d8+5 </Damage>
                <AttackStat> Strength </AttackStat>
@@ -1239,7 +1239,7 @@
  </DamageComponents>
             </Weapon>
             <Weapon name="Shortbow">
-               <RulesElement name="Shortbow" type="Weapon" internal-id="ID_FMP_WEAPON_39" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=39&amp;ftype=3" charelem="d5d74d8" legality="rules-legal" />
+               <RulesElement name="Shortbow" type="Weapon" internal-id="ID_FMP_WEAPON_39" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=39&amp;ftype=3" charelem="d5d70d8" legality="rules-legal" />
                <AttackBonus> 6 </AttackBonus>
                <Damage> 1d8+3 </Damage>
                <AttackStat> Strength </AttackStat>
@@ -1254,7 +1254,7 @@
  </DamageComponents>
             </Weapon>
             <Weapon name="Longsword">
-               <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="d5d6458" legality="rules-legal" />
+               <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="d5d6318" legality="rules-legal" />
                <AttackBonus> 9 </AttackBonus>
                <Damage> 1d8+4 </Damage>
                <AttackStat> Strength </AttackStat>
@@ -1271,7 +1271,7 @@
  </DamageComponents>
             </Weapon>
             <Weapon name="Short sword">
-               <RulesElement name="Short sword" type="Weapon" internal-id="ID_FMP_WEAPON_20" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=20&amp;ftype=3" charelem="d5d6058" legality="rules-legal" />
+               <RulesElement name="Short sword" type="Weapon" internal-id="ID_FMP_WEAPON_20" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=20&amp;ftype=3" charelem="d5d59d8" legality="rules-legal" />
                <AttackBonus> 8 </AttackBonus>
                <Damage> 1d6+3 </Damage>
                <AttackStat> Strength </AttackStat>
