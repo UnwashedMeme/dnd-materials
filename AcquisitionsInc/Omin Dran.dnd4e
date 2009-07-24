@@ -13,7 +13,7 @@
 
       <Details>
          <name> Omin Dran </name>
-         <Level> 1 </Level>
+         <Level> 2 </Level>
          <Player> Jerry Holkins </Player>
          <Height> 5&apos; 10&quot; </Height>
          <Weight> 180 </Weight>
@@ -22,7 +22,7 @@
          <Alignment>  </Alignment>
          <Company> Acquisitions, Inc. </Company>
          <Portrait> file://D:\dnd-materials2\AcquisitionsInc\Omin.jpg </Portrait>
-         <Experience> 0 </Experience>
+         <Experience> 1000 </Experience>
          <CarriedMoney> 100 gp </CarriedMoney>
          <StoredMoney> 0 gp </StoredMoney>
          <Traits> Ominifis Hereward Dran is, like any executive in this economy, trying to make the best of a bad situation.  As a result, he commits his crew to any job available.  His tabard is plainly emblazoned with the Acquisitions Incorporated logo &quot;to get the brand out there.&quot;  Long term, he wants to expand into a line of branded &quot;Dungeoneering Lifestyle&quot; supplies like torches and grappling hooks.  He currently drinks a tincture of Marquis blossoms and roots of Lazuli to rein in his nerves. </Traits>
@@ -120,7 +120,7 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <statadd Level="1" value="1" statlink="Charisma" abilmod="true" charelem="a7cb090" />
          </Stat>
 
-         <Stat name="AC" value="17">
+         <Stat name="AC" value="18">
             <alias name="AC" />
             <alias name="Armor Class" />
             <statadd Level="1" value="10" charelem="a7cb090" />
@@ -128,6 +128,7 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <statadd type="Ability" Level="1" not-wearing="armor:heavy" value="1" statlink="Dexterity" abilmod="true" charelem="a7cb090" />
             <statadd type="Ability" Level="1" not-wearing="armor:heavy" value="1" statlink="Intelligence" abilmod="true" charelem="a7cb090" />
             <statadd type="Defensive" Level="1" wearing="DEFENSIVE:" value="1" charelem="a7cb090" />
+            <statadd Level="2" conditional="against opportunity attacks" value="2" charelem="b7f9978" />
             <statadd type="Armor" value="6" charelem="b7d0be8" />
             <statadd type="Enhancement" value="1" charelem="b7ffb78" />
          </Stat>
@@ -137,15 +138,17 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <statadd Level="1" value="3" charelem="a7cb090" />
          </Stat>
 
-         <Stat name="Level" value="1">
+         <Stat name="Level" value="2">
             <alias name="Level" />
             <statadd Level="1" value="1" charelem="a7cb090" />
+            <statadd Level="2" value="1" charelem="b800578" />
          </Stat>
 
-         <Stat name="Hit Points" value="24">
+         <Stat name="Hit Points" value="29">
             <alias name="Hit Points" />
             <statadd type="Level 1" Level="1" value="1" statlink="Constitution" charelem="a7cb090" />
             <statadd Level="1" value="1" statlink="_LEVEL-ONE-HPS" charelem="a7cb090" />
+            <statadd Level="2" value="1" statlink="_PER-LEVEL-HPS" charelem="b800578" />
          </Stat>
 
          <Stat name="_LEVEL-ONE-HPS" value="12">
@@ -159,7 +162,7 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <statadd Level="1" value="7" charelem="b821900" />
          </Stat>
 
-         <Stat name="Fortitude Defense" value="13">
+         <Stat name="Fortitude Defense" value="14">
             <alias name="Fortitude Defense" />
             <statadd Level="1" value="10" charelem="a7cb090" />
             <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="a7cb090" />
@@ -168,15 +171,16 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <statadd type="Class" Level="1" value="1" statlink="Fortitude Defense Class Bonus" charelem="a7cb090" />
          </Stat>
 
-         <Stat name="HALF-LEVEL" value="0">
+         <Stat name="HALF-LEVEL" value="1">
             <alias name="HALF-LEVEL" />
+            <statadd Level="2" value="1" charelem="b800578" />
          </Stat>
 
          <Stat name="Fortitude Defense Class Bonus" value="0">
             <alias name="Fortitude Defense Class Bonus" />
          </Stat>
 
-         <Stat name="Reflex Defense" value="10">
+         <Stat name="Reflex Defense" value="11">
             <alias name="Reflex Defense" />
             <statadd Level="1" value="10" charelem="a7cb090" />
             <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="a7cb090" />
@@ -190,7 +194,7 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <alias name="Reflex Defense Class Bonus" />
          </Stat>
 
-         <Stat name="Will Defense" value="15">
+         <Stat name="Will Defense" value="16">
             <alias name="Will Defense" />
             <statadd Level="1" value="10" charelem="a7cb090" />
             <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="a7cb090" />
@@ -204,7 +208,7 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <statadd Level="1" value="2" charelem="b821900" />
          </Stat>
 
-         <Stat name="Initiative" value="0">
+         <Stat name="Initiative" value="1">
             <alias name="Initiative" />
             <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="a7cb090" />
             <statadd type="Ability" Level="1" value="1" statlink="Dexterity" abilmod="true" charelem="a7cb090" />
@@ -220,7 +224,7 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <statadd Level="1" value="2" charelem="a7cb090" />
          </Stat>
 
-         <Stat name="Acrobatics" value="-1">
+         <Stat name="Acrobatics" value="0">
             <alias name="Acrobatics" />
             <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="a8cf148" />
             <statadd type="Ability" Level="1" value="1" statlink="Dexterity" abilmod="true" charelem="a8cf148" />
@@ -242,7 +246,7 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <statadd value="-1" charelem="b7d0be8" />
          </Stat>
 
-         <Stat name="Arcana" value="-1">
+         <Stat name="Arcana" value="0">
             <alias name="Arcana" />
             <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="a8cf148" />
             <statadd type="Ability" Level="1" value="1" statlink="Intelligence" abilmod="true" charelem="a8cf148" />
@@ -258,7 +262,7 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <alias name="Arcana Misc" />
          </Stat>
 
-         <Stat name="Bluff" value="1">
+         <Stat name="Bluff" value="2">
             <alias name="Bluff" />
             <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="a8cf148" />
             <statadd type="Ability" Level="1" value="1" statlink="Charisma" abilmod="true" charelem="a8cf148" />
@@ -274,7 +278,7 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <alias name="Bluff Misc" />
          </Stat>
 
-         <Stat name="Diplomacy" value="8">
+         <Stat name="Diplomacy" value="9">
             <alias name="Diplomacy" />
             <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="a8cf148" />
             <statadd type="Ability" Level="1" value="1" statlink="Charisma" abilmod="true" charelem="a8cf148" />
@@ -292,7 +296,7 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <statadd type="Racial" Level="1" value="2" charelem="b821ad0" />
          </Stat>
 
-         <Stat name="Dungeoneering" value="3">
+         <Stat name="Dungeoneering" value="4">
             <alias name="Dungeoneering" />
             <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="a8cf148" />
             <statadd type="Ability" Level="1" value="1" statlink="Wisdom" abilmod="true" charelem="a8cf148" />
@@ -308,7 +312,7 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <alias name="Dungeoneering Misc" />
          </Stat>
 
-         <Stat name="Endurance" value="0">
+         <Stat name="Endurance" value="1">
             <alias name="Endurance" />
             <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="a8cf148" />
             <statadd type="Ability" Level="1" value="1" statlink="Constitution" abilmod="true" charelem="a8cf148" />
@@ -325,7 +329,7 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <alias name="Endurance Misc" />
          </Stat>
 
-         <Stat name="Heal" value="8">
+         <Stat name="Heal" value="9">
             <alias name="Heal" />
             <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="a8cf148" />
             <statadd type="Ability" Level="1" value="1" statlink="Wisdom" abilmod="true" charelem="a8cf148" />
@@ -342,7 +346,7 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <alias name="Heal Misc" />
          </Stat>
 
-         <Stat name="History" value="-1">
+         <Stat name="History" value="0">
             <alias name="History" />
             <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="a8cf148" />
             <statadd type="Ability" Level="1" value="1" statlink="Intelligence" abilmod="true" charelem="a8cf148" />
@@ -358,7 +362,7 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <alias name="History Misc" />
          </Stat>
 
-         <Stat name="Insight" value="5">
+         <Stat name="Insight" value="6">
             <alias name="Insight" />
             <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="a8cf148" />
             <statadd type="Ability" Level="1" value="1" statlink="Wisdom" abilmod="true" charelem="a8cf148" />
@@ -375,7 +379,7 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <statadd type="Racial" Level="1" value="2" charelem="b8219e8" />
          </Stat>
 
-         <Stat name="Intimidate" value="1">
+         <Stat name="Intimidate" value="2">
             <alias name="Intimidate" />
             <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="a8cf148" />
             <statadd type="Ability" Level="1" value="1" statlink="Charisma" abilmod="true" charelem="a8cf148" />
@@ -391,7 +395,7 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <alias name="Intimidate Misc" />
          </Stat>
 
-         <Stat name="Nature" value="8">
+         <Stat name="Nature" value="9">
             <alias name="Nature" />
             <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="a8cf148" />
             <statadd type="Ability" Level="1" value="1" statlink="Wisdom" abilmod="true" charelem="a8cf148" />
@@ -408,7 +412,7 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <alias name="Nature Misc" />
          </Stat>
 
-         <Stat name="Perception" value="3">
+         <Stat name="Perception" value="4">
             <alias name="Perception" />
             <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="a8cf148" />
             <statadd type="Ability" Level="1" value="1" statlink="Wisdom" abilmod="true" charelem="a8cf148" />
@@ -424,7 +428,7 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <alias name="Perception Misc" />
          </Stat>
 
-         <Stat name="Religion" value="4">
+         <Stat name="Religion" value="5">
             <alias name="Religion" />
             <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="a8cf148" />
             <statadd type="Ability" Level="1" value="1" statlink="Intelligence" abilmod="true" charelem="a8cf148" />
@@ -441,7 +445,7 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <alias name="Religion Misc" />
          </Stat>
 
-         <Stat name="Stealth" value="-1">
+         <Stat name="Stealth" value="0">
             <alias name="Stealth" />
             <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="a8cf148" />
             <statadd type="Ability" Level="1" value="1" statlink="Dexterity" abilmod="true" charelem="a8cf148" />
@@ -458,7 +462,7 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <alias name="Stealth Misc" />
          </Stat>
 
-         <Stat name="Streetwise" value="1">
+         <Stat name="Streetwise" value="2">
             <alias name="Streetwise" />
             <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="a8cf148" />
             <statadd type="Ability" Level="1" value="1" statlink="Charisma" abilmod="true" charelem="a8cf148" />
@@ -474,7 +478,7 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <alias name="Streetwise Misc" />
          </Stat>
 
-         <Stat name="Thievery" value="-1">
+         <Stat name="Thievery" value="0">
             <alias name="Thievery" />
             <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="a8cf148" />
             <statadd type="Ability" Level="1" value="1" statlink="Dexterity" abilmod="true" charelem="a8cf148" />
@@ -491,7 +495,7 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <alias name="Thievery Misc" />
          </Stat>
 
-         <Stat name="Athletics" value="2">
+         <Stat name="Athletics" value="3">
             <alias name="Athletics" />
             <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="a8cf148" />
             <statadd type="Ability" Level="1" value="1" statlink="Strength" abilmod="true" charelem="a8cf148" />
@@ -508,13 +512,13 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <alias name="Athletics Misc" />
          </Stat>
 
-         <Stat name="Passive Perception" value="13">
+         <Stat name="Passive Perception" value="14">
             <alias name="Passive Perception" />
             <statadd Level="1" value="1" statlink="Perception" charelem="a8cf148" />
             <statadd Level="1" value="10" charelem="a8cf148" />
          </Stat>
 
-         <Stat name="Passive Insight" value="15">
+         <Stat name="Passive Insight" value="16">
             <alias name="Passive Insight" />
             <statadd Level="1" value="1" statlink="Insight" charelem="a8cf148" />
             <statadd Level="1" value="10" charelem="a8cf148" />
@@ -571,9 +575,10 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <statadd Level="1" value="5" charelem="b821900" />
          </Stat>
 
-         <Stat name="XP Needed" value="1000">
+         <Stat name="XP Needed" value="2250">
             <alias name="XP Needed" />
             <statadd Level="1" value="1000" charelem="a7cb090" />
+            <statadd Level="2" value="1250" charelem="b800578" />
          </Stat>
 
          <Stat name="Weight" value="98">
@@ -712,6 +717,11 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
          <RulesElement name="Healing Strike" type="Power" internal-id="ID_FMP_POWER_891" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=891" charelem="b810a70" legality="rules-legal" />
          <RulesElement name="Avenging Flame" type="Power" internal-id="ID_FMP_POWER_1404" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1404" charelem="b810bd0" legality="rules-legal" />
          <RulesElement name="Oghma" type="Deity" internal-id="ID_FMP_DEITY_23" charelem="b810b58" legality="rules-legal" />
+         <RulesElement name="2" type="Level" internal-id="ID_INTERNAL_LEVEL_2" charelem="b800578" legality="rules-legal" />
+         <RulesElement name="Defensive Mobility" type="Feat" internal-id="ID_FMP_FEAT_127" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=127" charelem="b7f9978" legality="rules-legal" >
+            <specific name="Short Description"> +2 to AC against opportunity attacks </specific>
+         </RulesElement>
+         <RulesElement name="Sanctuary" type="Power" internal-id="ID_FMP_POWER_91" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=91" charelem="b7eabc0" legality="rules-legal" />
       </RulesElementTally>
 
 
@@ -771,12 +781,12 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <specific name="Action Type"> Standard Action </specific>
             <Weapon name="Mace">
                <RulesElement name="Mace" type="Weapon" internal-id="ID_FMP_WEAPON_5" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=5&amp;ftype=3" charelem="b77e840" legality="rules-legal" />
-               <AttackBonus> 5 </AttackBonus>
+               <AttackBonus> 6 </AttackBonus>
                <Damage> 1d8+3 </Damage>
                <AttackStat> Strength </AttackStat>
                <Defense> AC </Defense>
                <HitComponents> +3 Strength modifier.
-+0 half your level.
++1 half your level.
 +2 proficiency bonus.
 
                </HitComponents>
@@ -786,12 +796,12 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             </Weapon>
             <Weapon name="Morningstar">
                <RulesElement name="Morningstar" type="Weapon" internal-id="ID_FMP_WEAPON_9" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=9&amp;ftype=3" charelem="b797d78" legality="rules-legal" />
-               <AttackBonus> 5 </AttackBonus>
+               <AttackBonus> 6 </AttackBonus>
                <Damage> 1d10+3 </Damage>
                <AttackStat> Strength </AttackStat>
                <Defense> AC </Defense>
                <HitComponents> +3 Strength modifier.
-+0 half your level.
++1 half your level.
 +2 proficiency bonus.
 
                </HitComponents>
@@ -800,12 +810,12 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
                </DamageComponents>
             </Weapon>
             <Weapon name="Unarmed">
-               <AttackBonus> 3 </AttackBonus>
+               <AttackBonus> 4 </AttackBonus>
                <Damage> 1d4+3 </Damage>
                <AttackStat> Strength </AttackStat>
                <Defense> AC </Defense>
                <HitComponents> +3 Strength modifier.
-+0 half your level.
++1 half your level.
 
                </HitComponents>
                <DamageComponents> +3 Strength modifier.
@@ -818,12 +828,12 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <specific name="Power Usage"> At-Will </specific>
             <specific name="Action Type"> Standard Action </specific>
             <Weapon name="Unarmed">
-               <AttackBonus> 0 </AttackBonus>
+               <AttackBonus> 1 </AttackBonus>
                <Damage> 1d4 </Damage>
                <AttackStat> Dexterity </AttackStat>
                <Defense> AC </Defense>
                <HitComponents> +0 Dexterity modifier.
-+0 half your level.
++1 half your level.
 
                </HitComponents>
                <DamageComponents> +0 Dexterity modifier.
@@ -837,12 +847,12 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <specific name="Action Type"> Standard Action </specific>
             <Weapon name="Mace">
                <RulesElement name="Mace" type="Weapon" internal-id="ID_FMP_WEAPON_5" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=5&amp;ftype=3" charelem="b77e840" legality="rules-legal" />
-               <AttackBonus> 5 </AttackBonus>
+               <AttackBonus> 6 </AttackBonus>
                <Damage> 1d8+3 </Damage>
                <AttackStat> Strength </AttackStat>
                <Defense> AC </Defense>
                <HitComponents> +3 Strength modifier.
-+0 half your level.
++1 half your level.
 +2 proficiency bonus.
 
                </HitComponents>
@@ -852,12 +862,12 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             </Weapon>
             <Weapon name="Morningstar">
                <RulesElement name="Morningstar" type="Weapon" internal-id="ID_FMP_WEAPON_9" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=9&amp;ftype=3" charelem="b797d78" legality="rules-legal" />
-               <AttackBonus> 5 </AttackBonus>
+               <AttackBonus> 6 </AttackBonus>
                <Damage> 1d10+3 </Damage>
                <AttackStat> Strength </AttackStat>
                <Defense> AC </Defense>
                <HitComponents> +3 Strength modifier.
-+0 half your level.
++1 half your level.
 +2 proficiency bonus.
 
                </HitComponents>
@@ -866,12 +876,12 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
                </DamageComponents>
             </Weapon>
             <Weapon name="Unarmed">
-               <AttackBonus> 3 </AttackBonus>
+               <AttackBonus> 4 </AttackBonus>
                <Damage> 1d4+3 </Damage>
                <AttackStat> Strength </AttackStat>
                <Defense> AC </Defense>
                <HitComponents> +3 Strength modifier.
-+0 half your level.
++1 half your level.
 
                </HitComponents>
                <DamageComponents> +3 Strength modifier.
@@ -890,13 +900,13 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <specific name="Action Type"> Standard Action </specific>
             <Weapon name="Holy Symbol">
                <RulesElement name="Holy Symbol" type="Gear" internal-id="ID_FMP_GEAR_27" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=27&amp;ftype=4" charelem="b7d3140" legality="rules-legal" />
-               <AttackBonus> 3 </AttackBonus>
+               <AttackBonus> 4 </AttackBonus>
                <Damage> 1d10+3 </Damage>
                <DamageType> Radiant </DamageType>
                <AttackStat> Wisdom </AttackStat>
                <Defense> Will </Defense>
                <HitComponents> +3 Wisdom modifier.
-+0 half your level.
++1 half your level.
 
                </HitComponents>
                <DamageComponents> +3 Wisdom modifier.
@@ -904,13 +914,13 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
                </DamageComponents>
             </Weapon>
             <Weapon name="Unarmed">
-               <AttackBonus> 3 </AttackBonus>
+               <AttackBonus> 4 </AttackBonus>
                <Damage> 1d10+3 </Damage>
                <DamageType> Radiant </DamageType>
                <AttackStat> Wisdom </AttackStat>
                <Defense> Will </Defense>
                <HitComponents> +3 Wisdom modifier.
-+0 half your level.
++1 half your level.
 
                </HitComponents>
                <DamageComponents> +3 Wisdom modifier.
@@ -923,12 +933,12 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <specific name="Power Usage"> Encounter </specific>
             <specific name="Action Type"> Minor Action </specific>
             <Weapon name="Unarmed">
-               <AttackBonus> 0 </AttackBonus>
+               <AttackBonus> 1 </AttackBonus>
                <Damage>  </Damage>
                <AttackStat> Unknown </AttackStat>
                <Defense>  </Defense>
                <Healing> regain an additional 3 hit points.               </Healing>
-               <HitComponents> +0 half your level.
+               <HitComponents> +1 half your level.
 
                </HitComponents>
                <DamageComponents> 
@@ -943,12 +953,12 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <specific name="Action Type"> Standard Action </specific>
             <Weapon name="Mace">
                <RulesElement name="Mace" type="Weapon" internal-id="ID_FMP_WEAPON_5" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=5&amp;ftype=3" charelem="b77e840" legality="rules-legal" />
-               <AttackBonus> 5 </AttackBonus>
+               <AttackBonus> 6 </AttackBonus>
                <Damage> 1d8+3 </Damage>
                <AttackStat> Strength </AttackStat>
                <Defense> AC </Defense>
                <HitComponents> +3 Strength modifier.
-+0 half your level.
++1 half your level.
 +2 proficiency bonus.
 
                </HitComponents>
@@ -958,12 +968,12 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             </Weapon>
             <Weapon name="Morningstar">
                <RulesElement name="Morningstar" type="Weapon" internal-id="ID_FMP_WEAPON_9" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=9&amp;ftype=3" charelem="b797d78" legality="rules-legal" />
-               <AttackBonus> 5 </AttackBonus>
+               <AttackBonus> 6 </AttackBonus>
                <Damage> 1d10+3 </Damage>
                <AttackStat> Strength </AttackStat>
                <Defense> AC </Defense>
                <HitComponents> +3 Strength modifier.
-+0 half your level.
++1 half your level.
 +2 proficiency bonus.
 
                </HitComponents>
@@ -972,12 +982,12 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
                </DamageComponents>
             </Weapon>
             <Weapon name="Unarmed">
-               <AttackBonus> 3 </AttackBonus>
+               <AttackBonus> 4 </AttackBonus>
                <Damage> 1d4+3 </Damage>
                <AttackStat> Strength </AttackStat>
                <Defense> AC </Defense>
                <HitComponents> +3 Strength modifier.
-+0 half your level.
++1 half your level.
 
                </HitComponents>
                <DamageComponents> +3 Strength modifier.
@@ -991,13 +1001,13 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <specific name="Action Type"> Standard Action </specific>
             <Weapon name="Holy Symbol">
                <RulesElement name="Holy Symbol" type="Gear" internal-id="ID_FMP_GEAR_27" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=27&amp;ftype=4" charelem="b7d3140" legality="rules-legal" />
-               <AttackBonus> 3 </AttackBonus>
+               <AttackBonus> 4 </AttackBonus>
                <Damage> 1d6+3 </Damage>
                <DamageType> Radiant </DamageType>
                <AttackStat> Wisdom </AttackStat>
                <Defense> Reflex </Defense>
                <HitComponents> +3 Wisdom modifier.
-+0 half your level.
++1 half your level.
 
                </HitComponents>
                <DamageComponents> +3 Wisdom modifier.
@@ -1005,13 +1015,13 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
                </DamageComponents>
             </Weapon>
             <Weapon name="Unarmed">
-               <AttackBonus> 3 </AttackBonus>
+               <AttackBonus> 4 </AttackBonus>
                <Damage> 1d6+3 </Damage>
                <DamageType> Radiant </DamageType>
                <AttackStat> Wisdom </AttackStat>
                <Defense> Reflex </Defense>
                <HitComponents> +3 Wisdom modifier.
-+0 half your level.
++1 half your level.
 
                </HitComponents>
                <DamageComponents> +3 Wisdom modifier.
@@ -1030,14 +1040,14 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <specific name="Action Type"> Standard Action </specific>
             <Weapon name="Mace">
                <RulesElement name="Mace" type="Weapon" internal-id="ID_FMP_WEAPON_5" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=5&amp;ftype=3" charelem="b77e840" legality="rules-legal" />
-               <AttackBonus> 5 </AttackBonus>
+               <AttackBonus> 6 </AttackBonus>
                <Damage> 2d8+3 </Damage>
                <DamageType> Radiant </DamageType>
                <AttackStat> Strength </AttackStat>
                <Defense> AC </Defense>
                <Healing> regain an additional 3 hit points.               </Healing>
                <HitComponents> +3 Strength modifier.
-+0 half your level.
++1 half your level.
 +2 proficiency bonus.
 
                </HitComponents>
@@ -1049,14 +1059,14 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             </Weapon>
             <Weapon name="Morningstar">
                <RulesElement name="Morningstar" type="Weapon" internal-id="ID_FMP_WEAPON_9" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=9&amp;ftype=3" charelem="b797d78" legality="rules-legal" />
-               <AttackBonus> 5 </AttackBonus>
+               <AttackBonus> 6 </AttackBonus>
                <Damage> 2d10+3 </Damage>
                <DamageType> Radiant </DamageType>
                <AttackStat> Strength </AttackStat>
                <Defense> AC </Defense>
                <Healing> regain an additional 3 hit points.               </Healing>
                <HitComponents> +3 Strength modifier.
-+0 half your level.
++1 half your level.
 +2 proficiency bonus.
 
                </HitComponents>
@@ -1067,14 +1077,14 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
                </HealingComponents>
             </Weapon>
             <Weapon name="Unarmed">
-               <AttackBonus> 3 </AttackBonus>
+               <AttackBonus> 4 </AttackBonus>
                <Damage> 2d4+3 </Damage>
                <DamageType> Radiant </DamageType>
                <AttackStat> Strength </AttackStat>
                <Defense> AC </Defense>
                <Healing> regain an additional 3 hit points.               </Healing>
                <HitComponents> +3 Strength modifier.
-+0 half your level.
++1 half your level.
 
                </HitComponents>
                <DamageComponents> +3 Strength modifier.
@@ -1090,12 +1100,12 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             <specific name="Action Type"> Standard Action </specific>
             <Weapon name="Mace">
                <RulesElement name="Mace" type="Weapon" internal-id="ID_FMP_WEAPON_5" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=5&amp;ftype=3" charelem="b77e840" legality="rules-legal" />
-               <AttackBonus> 5 </AttackBonus>
+               <AttackBonus> 6 </AttackBonus>
                <Damage> 2d8+3 </Damage>
                <AttackStat> Strength </AttackStat>
                <Defense> AC </Defense>
                <HitComponents> +3 Strength modifier.
-+0 half your level.
++1 half your level.
 +2 proficiency bonus.
 
                </HitComponents>
@@ -1105,12 +1115,12 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
             </Weapon>
             <Weapon name="Morningstar">
                <RulesElement name="Morningstar" type="Weapon" internal-id="ID_FMP_WEAPON_9" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=9&amp;ftype=3" charelem="b797d78" legality="rules-legal" />
-               <AttackBonus> 5 </AttackBonus>
+               <AttackBonus> 6 </AttackBonus>
                <Damage> 2d10+3 </Damage>
                <AttackStat> Strength </AttackStat>
                <Defense> AC </Defense>
                <HitComponents> +3 Strength modifier.
-+0 half your level.
++1 half your level.
 +2 proficiency bonus.
 
                </HitComponents>
@@ -1119,18 +1129,23 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
                </DamageComponents>
             </Weapon>
             <Weapon name="Unarmed">
-               <AttackBonus> 3 </AttackBonus>
+               <AttackBonus> 4 </AttackBonus>
                <Damage> 2d4+3 </Damage>
                <AttackStat> Strength </AttackStat>
                <Defense> AC </Defense>
                <HitComponents> +3 Strength modifier.
-+0 half your level.
++1 half your level.
 
                </HitComponents>
                <DamageComponents> +3 Strength modifier.
 
                </DamageComponents>
             </Weapon>
+         </Power>
+
+         <Power name="Sanctuary">
+            <specific name="Power Usage"> Encounter </specific>
+            <specific name="Action Type"> Standard Action </specific>
          </Power>
 
       </PowerStats>
@@ -1340,6 +1355,13 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
          <RulesElement name="Chainmail" type="Armor" internal-id="ID_FMP_ARMOR_4" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=4&amp;ftype=2" charelem="b829078" legality="rules-legal" />
       </loot>
    </Level>
+   <Level>
+      <RulesElement name="2" type="Level" internal-id="ID_INTERNAL_LEVEL_2" charelem="b800578" legality="rules-legal" >
+         <RulesElement name="Defensive Mobility" type="Feat" internal-id="ID_FMP_FEAT_127" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=127" charelem="b7f9978" legality="rules-legal" />
+         <RulesElement name="Sanctuary" type="Power" internal-id="ID_FMP_POWER_91" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=91" charelem="b7eabc0" legality="rules-legal" />
+         <RulesElement name="" type="" charelem="b7eac38" legality="rules-legal" />
+      </RulesElement>
+   </Level>
 
 
    <!--
@@ -1377,7 +1399,7 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
       Jerry Holkins
    </textstring>
    <textstring name="Character Save File">
-      d:\dnd-materials2\acquisitionsinc\omin dran.dnd4e
+      D:\dnd-materials2\AcquisitionsInc\omin dran.dnd4e
    </textstring>
    <textstring name="_PER_LEVEL_2_Carried Money">
       100 gp
@@ -1398,7 +1420,7 @@ Average of voice.  Average in the performance of his abilities.  Even his supern
       0
    </textstring>
    <textstring name="Experience Points">
-      0
+      1000
    </textstring>
    <textstring name="CUR_HitPoints">
       
