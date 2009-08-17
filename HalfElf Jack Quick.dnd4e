@@ -120,7 +120,7 @@
             <statadd Level="1" value="1" statlink="Charisma" abilmod="true" charelem="e288a20" />
          </Stat>
 
-         <Stat name="AC" value="18">
+         <Stat name="AC" value="21">
             <alias name="AC" />
             <alias name="Armor Class" />
             <statadd Level="1" value="10" charelem="e288a20" />
@@ -128,7 +128,8 @@
             <statadd type="Ability" Level="1" not-wearing="armor:heavy" value="1" statlink="Dexterity" abilmod="true" charelem="e288a20" />
             <statadd type="Ability" Level="1" not-wearing="armor:heavy" value="1" statlink="Intelligence" abilmod="true" charelem="e288a20" />
             <statadd type="Defensive" Level="1" wearing="DEFENSIVE:" value="1" charelem="e288a20" />
-            <statadd type="Armor" value="3" charelem="e2b05a0" />
+            <statadd type="Armor" value="7" charelem="e2b09e0" />
+            <statadd type="Enhancement" value="2" charelem="e2b0420" />
          </Stat>
 
          <Stat name="Death Saves Count" value="3">
@@ -173,7 +174,7 @@
             <statadd type="Ability" Level="1" value="1" statlink="Strength" abilmod="true" charelem="e288a20" />
             <statadd type="Ability" Level="1" value="1" statlink="Constitution" abilmod="true" charelem="e288a20" />
             <statadd type="Class" Level="1" value="1" statlink="Fortitude Defense Class Bonus" charelem="e288a20" />
-            <statadd type="Enhancement" value="1" charelem="e2af420" />
+            <statadd type="Enhancement" value="1" charelem="e2b2020" />
          </Stat>
 
          <Stat name="HALF-LEVEL" value="2">
@@ -193,8 +194,8 @@
             <statadd type="Ability" Level="1" value="1" statlink="Dexterity" abilmod="true" charelem="e288a20" />
             <statadd type="Ability" Level="1" value="1" statlink="Intelligence" abilmod="true" charelem="e288a20" />
             <statadd type="Class" Level="1" value="1" statlink="Reflex Defense Class Bonus" charelem="e288a20" />
-            <statadd requires="!Armor Proficiency (Hide)" value="-2" charelem="e2b05a0" />
-            <statadd type="Enhancement" value="1" charelem="e2af420" />
+            <statadd type="Enhancement" value="1" charelem="e2b2020" />
+            <statadd requires="!Armor Proficiency (Chainmail)" value="-2" charelem="e2b09e0" />
          </Stat>
 
          <Stat name="Reflex Defense Class Bonus" value="1">
@@ -209,7 +210,7 @@
             <statadd type="Ability" Level="1" value="1" statlink="Wisdom" abilmod="true" charelem="e288a20" />
             <statadd type="Ability" Level="1" value="1" statlink="Charisma" abilmod="true" charelem="e288a20" />
             <statadd type="Class" Level="1" value="1" statlink="Will Defense Class Bonus" charelem="e288a20" />
-            <statadd type="Enhancement" value="1" charelem="e2af420" />
+            <statadd type="Enhancement" value="1" charelem="e2b2020" />
          </Stat>
 
          <Stat name="Will Defense Class Bonus" value="1">
@@ -253,7 +254,7 @@
 
          <Stat name="Armor Penalty" value="-1">
             <alias name="Armor Penalty" />
-            <statadd value="-1" charelem="e2b05a0" />
+            <statadd value="-1" charelem="e2b09e0" />
          </Stat>
 
          <Stat name="Arcana" value="10">
@@ -552,9 +553,10 @@
             <statadd Level="1" value="10" charelem="e2869a0" />
          </Stat>
 
-         <Stat name="Speed" value="6">
+         <Stat name="Speed" value="5">
             <alias name="Speed" />
             <statadd Level="1" value="6" charelem="e286460" />
+            <statadd type="Armor" value="-1" charelem="e2b09e0" />
          </Stat>
 
          <Stat name="Average Height" value="0">
@@ -606,19 +608,19 @@
             <statadd Level="2" value="1" charelem="e2b1760" />
          </Stat>
 
-         <Stat name="Weight" value="40">
+         <Stat name="Weight" value="80">
             <alias name="Weight" />
-            <statadd value="40" />
-         </Stat>
-
-         <Stat name="Attack Rolls" value="0">
-            <alias name="Attack Rolls" />
-            <statadd requires="!Armor Proficiency (Hide)" value="-2" charelem="e2b05a0" />
+            <statadd value="80" />
          </Stat>
 
          <Stat name="psychic:damage" value="1">
             <alias name="psychic:damage" />
-            <statadd type="item" value="1" charelem="e2b0760" />
+            <statadd type="item" value="1" charelem="e2b2260" />
+         </Stat>
+
+         <Stat name="Attack Rolls" value="0">
+            <alias name="Attack Rolls" />
+            <statadd requires="!Armor Proficiency (Chainmail)" value="-2" charelem="e2b09e0" />
          </Stat>
 
       </StatBlock>
@@ -787,8 +789,8 @@
          <RulesElement name="Charisma" type="Ability Increase (Level 4)" internal-id="ID_INTERNAL_ABILITY_INCREASE_(LEVEL_4)_CHARISMA" charelem="e2b1120" legality="rules-legal" />
          <RulesElement name="Wisdom" type="Ability Increase (Level 4)" internal-id="ID_INTERNAL_ABILITY_INCREASE_(LEVEL_4)_WISDOM" charelem="e2b1de0" legality="rules-legal" />
          <RulesElement name="5" type="Level" internal-id="ID_INTERNAL_LEVEL_5" charelem="e2b27a0" legality="rules-legal" />
-         <RulesElement name="Song of Discord" type="Power" internal-id="ID_FMP_POWER_4994" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=4994" charelem="e2af360" legality="rules-legal" />
-         <RulesElement name="Eyebite" type="Power" internal-id="ID_FMP_POWER_1456" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1456" charelem="e2b0e20" legality="rules-legal" />
+         <RulesElement name="Compulsion" type="Power" internal-id="ID_FMP_POWER_3100" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=3100" charelem="e2af360" legality="rules-legal" />
+         <RulesElement name="Eyebite" type="Power" internal-id="ID_FMP_POWER_1456" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1456" charelem="e2b1360" legality="rules-legal" />
       </RulesElementTally>
 
 
@@ -801,136 +803,146 @@
             </RulesElement>
          </loot>
          <loot count="0" equip-count="0" ShowPowerCard="1" >
-            <RulesElement name="Chainmail" type="Armor" internal-id="ID_FMP_ARMOR_4" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=4&amp;ftype=2" charelem="e2b09e0" legality="rules-legal" >
+            <RulesElement name="Chainmail" type="Armor" internal-id="ID_FMP_ARMOR_4" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=4&amp;ftype=2" charelem="e2b1060" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="1" equip-count="0" ShowPowerCard="1" >
-            <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="e2b2520" legality="rules-legal" >
+            <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="e2af6a0" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="0" equip-count="0" ShowPowerCard="1" >
-            <RulesElement name="Light Shield" type="Armor" internal-id="ID_FMP_ARMOR_7" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=7&amp;ftype=2" charelem="e2b1ba0" legality="rules-legal" >
+            <RulesElement name="Light Shield" type="Armor" internal-id="ID_FMP_ARMOR_7" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=7&amp;ftype=2" charelem="e2af560" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="1" equip-count="0" ShowPowerCard="1" >
-            <RulesElement name="Implement, Wand" type="Gear" internal-id="ID_FMP_GEAR_14" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=14&amp;ftype=4" charelem="e2b01a0" legality="rules-legal" >
+            <RulesElement name="Implement, Wand" type="Gear" internal-id="ID_FMP_GEAR_14" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=14&amp;ftype=4" charelem="e2affe0" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="1" equip-count="0" ShowPowerCard="1" >
-            <RulesElement name="Adventurer&apos;s Kit" type="Gear" internal-id="ID_FMP_GEAR_1" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=1&amp;ftype=4" charelem="e2b28e0" legality="rules-legal" >
+            <RulesElement name="Adventurer&apos;s Kit" type="Gear" internal-id="ID_FMP_GEAR_1" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=1&amp;ftype=4" charelem="e2afda0" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="0" equip-count="0" ShowPowerCard="1" >
-            <RulesElement name="Brew Potion" type="Ritual" internal-id="ID_FMP_RITUAL_1" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=1" charelem="e2b0fa0" legality="rules-legal" >
+            <RulesElement name="Brew Potion" type="Ritual" internal-id="ID_FMP_RITUAL_1" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=1" charelem="e2af320" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="0" equip-count="0" ShowPowerCard="1" >
-            <RulesElement name="Greatclub" type="Weapon" internal-id="ID_FMP_WEAPON_8" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=8&amp;ftype=3" charelem="e2b0ce0" legality="rules-legal" >
+            <RulesElement name="Greatclub" type="Weapon" internal-id="ID_FMP_WEAPON_8" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=8&amp;ftype=3" charelem="e2af0a0" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="0" equip-count="0" ShowPowerCard="1" >
-            <RulesElement name="Dagger" type="Weapon" internal-id="ID_FMP_WEAPON_3" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3&amp;ftype=3" charelem="e2b06a0" legality="rules-legal" >
+            <RulesElement name="Dagger" type="Weapon" internal-id="ID_FMP_WEAPON_3" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3&amp;ftype=3" charelem="e2aef20" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="0" equip-count="0" ShowPowerCard="1" >
-            <RulesElement name="Arcane Mark" type="Ritual" internal-id="ID_FMP_RITUAL_77" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=77" charelem="e2b10e0" legality="rules-legal" >
+            <RulesElement name="Arcane Mark" type="Ritual" internal-id="ID_FMP_RITUAL_77" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=77" charelem="e2aee60" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="4" equip-count="0" ShowPowerCard="1" >
-            <RulesElement name="Candle" type="Gear" internal-id="ID_FMP_GEAR_17" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=17&amp;ftype=4" charelem="e2b21e0" legality="rules-legal" >
+            <RulesElement name="Candle" type="Gear" internal-id="ID_FMP_GEAR_17" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=17&amp;ftype=4" charelem="e2b0b60" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="0" equip-count="0" ShowPowerCard="1" >
-            <RulesElement name="Sling" type="Weapon" internal-id="ID_FMP_WEAPON_37" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=37&amp;ftype=3" charelem="e2b0f60" legality="rules-legal" >
+            <RulesElement name="Sling" type="Weapon" internal-id="ID_FMP_WEAPON_37" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=37&amp;ftype=3" charelem="e2b0220" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="0" equip-count="0" ShowPowerCard="1" >
-            <RulesElement name="Mace" type="Weapon" internal-id="ID_FMP_WEAPON_5" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=5&amp;ftype=3" charelem="e2b0a20" legality="rules-legal" >
+            <RulesElement name="Mace" type="Weapon" internal-id="ID_FMP_WEAPON_5" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=5&amp;ftype=3" charelem="e2aeea0" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="0" equip-count="0" ShowPowerCard="1" >
-            <RulesElement name="Leather Armor" type="Armor" internal-id="ID_FMP_ARMOR_2" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=2&amp;ftype=2" charelem="e2b1f60" legality="rules-legal" >
+            <RulesElement name="Leather Armor" type="Armor" internal-id="ID_FMP_ARMOR_2" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=2&amp;ftype=2" charelem="e2aeaa0" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="0" equip-count="0" ShowPowerCard="1" >
-            <RulesElement name="Sling Bullets" type="Gear" internal-id="ID_FMP_GEAR_16" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=16&amp;ftype=4" charelem="e2af660" legality="rules-legal" >
+            <RulesElement name="Sling Bullets" type="Gear" internal-id="ID_FMP_GEAR_16" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=16&amp;ftype=4" charelem="e2b15a0" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="1" equip-count="0" ShowPowerCard="1" >
-            <RulesElement name="Flask (empty)" type="Gear" internal-id="ID_FMP_GEAR_26" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=26&amp;ftype=4" charelem="e2af860" legality="rules-legal" >
+            <RulesElement name="Flask (empty)" type="Gear" internal-id="ID_FMP_GEAR_26" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=26&amp;ftype=4" charelem="e2aec60" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="1" equip-count="1" ShowPowerCard="1" >
-            <RulesElement name="Mac-Fuirmidh Cittern +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_4862" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=4862&amp;ftype=1" charelem="e2b1fe0" legality="rules-legal" >
+            <RulesElement name="Mac-Fuirmidh Cittern +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_4862" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=4862&amp;ftype=1" charelem="e2b0f20" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="1" equip-count="0" ShowPowerCard="1" >
-            <RulesElement name="Fastidiousness" type="Ritual" internal-id="ID_FMP_RITUAL_113" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=113" charelem="e2afe20" legality="rules-legal" >
+            <RulesElement name="Fastidiousness" type="Ritual" internal-id="ID_FMP_RITUAL_113" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=113" charelem="e2b1d20" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="0" equip-count="0" ShowPowerCard="1" >
-            <RulesElement name="Glib Limerick" type="Ritual" internal-id="ID_FMP_RITUAL_197" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=197" charelem="e2b1da0" legality="rules-legal" >
+            <RulesElement name="Glib Limerick" type="Ritual" internal-id="ID_FMP_RITUAL_197" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=197" charelem="e2b0620" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="1" equip-count="0" ShowPowerCard="1" >
-            <RulesElement name="Traveler&apos;s Chant" type="Ritual" internal-id="ID_FMP_RITUAL_206" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=206" charelem="e2aeae0" legality="rules-legal" >
+            <RulesElement name="Traveler&apos;s Chant" type="Ritual" internal-id="ID_FMP_RITUAL_206" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=206" charelem="e2b0720" legality="rules-legal" >
+            </RulesElement>
+         </loot>
+         <loot count="1" equip-count="0" ShowPowerCard="1" >
+            <RulesElement name="Hide Armor" type="Armor" internal-id="ID_FMP_ARMOR_3" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3&amp;ftype=2" charelem="e2b23a0" legality="rules-legal" >
+            </RulesElement>
+         </loot>
+         <loot count="0" equip-count="0" ShowPowerCard="1" >
+            <RulesElement name="Tune of Merriment" type="Ritual" internal-id="ID_FMP_RITUAL_209" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=209" charelem="e2b1160" legality="rules-legal" >
+            </RulesElement>
+         </loot>
+         <loot count="0" equip-count="0" ShowPowerCard="1" >
+            <RulesElement name="Sovereign Glue" type="Ritual" internal-id="ID_FMP_RITUAL_154" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=154" charelem="e2b08e0" legality="rules-legal" >
+            </RulesElement>
+         </loot>
+         <loot count="0" equip-count="0" ShowPowerCard="1" >
+            <RulesElement name="Mask of the Eye Leech (heroic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_4517" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=4517&amp;ftype=1" charelem="e2b07a0" legality="rules-legal" >
+            </RulesElement>
+         </loot>
+         <loot count="0" equip-count="0" ShowPowerCard="1" >
+            <RulesElement name="Alchemical Reagents (Arcana)" type="Gear" internal-id="ID_FMP_GEAR_53" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=53&amp;ftype=4" charelem="e2b2060" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="1" equip-count="1" ShowPowerCard="1" >
-            <RulesElement name="Hide Armor" type="Armor" internal-id="ID_FMP_ARMOR_3" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3&amp;ftype=2" charelem="e2b05a0" legality="rules-legal" >
-            </RulesElement>
-         </loot>
-         <loot count="0" equip-count="0" ShowPowerCard="1" >
-            <RulesElement name="Tune of Merriment" type="Ritual" internal-id="ID_FMP_RITUAL_209" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=209" charelem="e2aef60" legality="rules-legal" >
-            </RulesElement>
-         </loot>
-         <loot count="0" equip-count="0" ShowPowerCard="1" >
-            <RulesElement name="Sovereign Glue" type="Ritual" internal-id="ID_FMP_RITUAL_154" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=154" charelem="e2aeee0" legality="rules-legal" >
-            </RulesElement>
-         </loot>
-         <loot count="0" equip-count="0" ShowPowerCard="1" >
-            <RulesElement name="Mask of the Eye Leech (heroic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_4517" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=4517&amp;ftype=1" charelem="e2b1960" legality="rules-legal" >
-            </RulesElement>
-         </loot>
-         <loot count="0" equip-count="0" ShowPowerCard="1" >
-            <RulesElement name="Alchemical Reagents (Arcana)" type="Gear" internal-id="ID_FMP_GEAR_53" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=53&amp;ftype=4" charelem="e2b1260" legality="rules-legal" >
+            <RulesElement name="Wand of Psychic Ravaging +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3132" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3132&amp;ftype=1" charelem="e2b2260" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="1" equip-count="1" ShowPowerCard="1" >
-            <RulesElement name="Wand of Psychic Ravaging +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3132" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3132&amp;ftype=1" charelem="e2b0760" legality="rules-legal" >
-            </RulesElement>
-         </loot>
-         <loot count="1" equip-count="1" ShowPowerCard="1" >
-            <RulesElement name="Cloak of Distortion +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3605" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3605&amp;ftype=1" charelem="e2af420" legality="rules-legal" >
+            <RulesElement name="Cloak of Distortion +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3605" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3605&amp;ftype=1" charelem="e2b2020" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="5" equip-count="0" ShowPowerCard="1" >
-            <RulesElement name="Oil (1 pint)" type="Gear" internal-id="ID_FMP_GEAR_52" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=52&amp;ftype=4" charelem="e2aee20" legality="rules-legal" >
+            <RulesElement name="Oil (1 pint)" type="Gear" internal-id="ID_FMP_GEAR_52" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=52&amp;ftype=4" charelem="e2b10e0" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="1" Weight="1.000000" name="Everburning Torch From Moradins Temple" equip-count="0" ShowPowerCard="1" >
-            <RulesElement name="Everburning Torch" type="Gear" internal-id="ID_FMP_GEAR_24" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=24&amp;ftype=4" charelem="e2af160" legality="rules-legal" >
+            <RulesElement name="Everburning Torch" type="Gear" internal-id="ID_FMP_GEAR_24" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=24&amp;ftype=4" charelem="e2b06a0" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="1" name="Fancy Purse (sometimes gore smeared)" equip-count="0" ShowPowerCard="1" >
-            <RulesElement name="Pouch, Belt (empty)" type="Gear" internal-id="ID_FMP_GEAR_6" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=6&amp;ftype=4" charelem="e2aefa0" legality="rules-legal" >
+            <RulesElement name="Pouch, Belt (empty)" type="Gear" internal-id="ID_FMP_GEAR_6" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=6&amp;ftype=4" charelem="e2b0ce0" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="1" equip-count="0" ShowPowerCard="1" >
-            <RulesElement name="Potion of Healing (heroic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_1138" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=1138&amp;ftype=1" charelem="e2af0e0" legality="rules-legal" >
+            <RulesElement name="Potion of Healing (heroic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_1138" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=1138&amp;ftype=1" charelem="e2b0fa0" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="0" equip-count="0" ShowPowerCard="1" >
-            <RulesElement name="Amanuensis" type="Ritual" internal-id="ID_FMP_RITUAL_75" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=75" charelem="e2af260" legality="rules-legal" >
+            <RulesElement name="Amanuensis" type="Ritual" internal-id="ID_FMP_RITUAL_75" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=75" charelem="e2b28e0" legality="rules-legal" >
             </RulesElement>
          </loot>
          <loot count="1" equip-count="0" ShowPowerCard="1" >
-            <RulesElement name="Attunement" type="Ritual" internal-id="ID_INTERNAL_RITUAL_ATTUNEMENT" charelem="e2b05e0" legality="houserule" >
+            <RulesElement name="Attunement" type="Ritual" internal-id="ID_INTERNAL_RITUAL_ATTUNEMENT" charelem="e2b01a0" legality="houserule" >
             Tune a magic item to a specific user
             </RulesElement>
          </loot>
          <loot count="1" equip-count="0" ShowPowerCard="1" >
-            <RulesElement name="Gentle Repose" type="Ritual" internal-id="ID_FMP_RITUAL_47" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=47" charelem="e2b18e0" legality="rules-legal" >
+            <RulesElement name="Gentle Repose" type="Ritual" internal-id="ID_FMP_RITUAL_47" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=47" charelem="e2b1ba0" legality="rules-legal" >
+            </RulesElement>
+         </loot>
+         <loot count="1" equip-count="1" ShowPowerCard="1" >
+            <RulesElement name="Belt of Resilience (heroic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3780" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3780&amp;ftype=1" charelem="e2b2520" legality="rules-legal" >
+            </RulesElement>
+         </loot>
+         <loot count="1" equip-count="1" ShowPowerCard="1" >
+            <RulesElement name="Finemail" type="Armor" internal-id="ID_FMP_ARMOR_34" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=34&amp;ftype=2" charelem="e2b09e0" legality="rules-legal" >
+            </RulesElement>
+            <RulesElement name="Armor of Sacrifice +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_1480" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=1480&amp;ftype=1" charelem="e2b0420" legality="rules-legal" >
             </RulesElement>
          </loot>
       </LootTally>
@@ -946,7 +958,7 @@
             <specific name="Power Usage"> At-Will </specific>
             <specific name="Action Type"> Standard Action </specific>
             <Weapon name="Longsword">
-               <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="e2b2520" legality="rules-legal" />
+               <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="e2af6a0" legality="rules-legal" />
                <AttackBonus> 4 </AttackBonus>
                <Damage> 1d8-1 </Damage>
                <AttackStat> Strength </AttackStat>
@@ -1036,7 +1048,7 @@
             <specific name="Power Usage"> At-Will </specific>
             <specific name="Action Type"> Standard Action </specific>
             <Weapon name="Mac-Fuirmidh Cittern +1">
-               <RulesElement name="Mac-Fuirmidh Cittern +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_4862" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=4862&amp;ftype=1" charelem="e2b1fe0" legality="rules-legal" />
+               <RulesElement name="Mac-Fuirmidh Cittern +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_4862" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=4862&amp;ftype=1" charelem="e2b0f20" legality="rules-legal" />
                <AttackBonus> 7 </AttackBonus>
                <Damage> 1d8+5 </Damage>
                <AttackStat> Charisma </AttackStat>
@@ -1052,7 +1064,7 @@
                </DamageComponents>
             </Weapon>
             <Weapon name="Wand of Psychic Ravaging +1">
-               <RulesElement name="Wand of Psychic Ravaging +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3132" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3132&amp;ftype=1" charelem="e2b0760" legality="rules-legal" />
+               <RulesElement name="Wand of Psychic Ravaging +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3132" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3132&amp;ftype=1" charelem="e2b2260" legality="rules-legal" />
                <AttackBonus> 7 </AttackBonus>
                <Damage> 1d8+5 </Damage>
                <AttackStat> Charisma </AttackStat>
@@ -1068,7 +1080,7 @@
                </DamageComponents>
             </Weapon>
             <Weapon name="Implement, Wand">
-               <RulesElement name="Implement, Wand" type="Gear" internal-id="ID_FMP_GEAR_14" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=14&amp;ftype=4" charelem="e2b01a0" legality="rules-legal" />
+               <RulesElement name="Implement, Wand" type="Gear" internal-id="ID_FMP_GEAR_14" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=14&amp;ftype=4" charelem="e2affe0" legality="rules-legal" />
                <AttackBonus> 6 </AttackBonus>
                <Damage> 1d8+4 </Damage>
                <AttackStat> Charisma </AttackStat>
@@ -1100,7 +1112,7 @@
             <specific name="Power Usage"> At-Will </specific>
             <specific name="Action Type"> Standard Action </specific>
             <Weapon name="Mac-Fuirmidh Cittern +1">
-               <RulesElement name="Mac-Fuirmidh Cittern +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_4862" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=4862&amp;ftype=1" charelem="e2b1fe0" legality="rules-legal" />
+               <RulesElement name="Mac-Fuirmidh Cittern +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_4862" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=4862&amp;ftype=1" charelem="e2b0f20" legality="rules-legal" />
                <AttackBonus> 7 </AttackBonus>
                <Damage> 1d6+6 </Damage>
                <DamageType> Psychic </DamageType>
@@ -1118,7 +1130,7 @@
                </DamageComponents>
             </Weapon>
             <Weapon name="Wand of Psychic Ravaging +1">
-               <RulesElement name="Wand of Psychic Ravaging +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3132" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3132&amp;ftype=1" charelem="e2b0760" legality="rules-legal" />
+               <RulesElement name="Wand of Psychic Ravaging +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3132" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3132&amp;ftype=1" charelem="e2b2260" legality="rules-legal" />
                <AttackBonus> 7 </AttackBonus>
                <Damage> 1d6+6 </Damage>
                <DamageType> Psychic </DamageType>
@@ -1136,7 +1148,7 @@
                </DamageComponents>
             </Weapon>
             <Weapon name="Implement, Wand">
-               <RulesElement name="Implement, Wand" type="Gear" internal-id="ID_FMP_GEAR_14" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=14&amp;ftype=4" charelem="e2b01a0" legality="rules-legal" />
+               <RulesElement name="Implement, Wand" type="Gear" internal-id="ID_FMP_GEAR_14" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=14&amp;ftype=4" charelem="e2affe0" legality="rules-legal" />
                <AttackBonus> 6 </AttackBonus>
                <Damage> 1d6+5 </Damage>
                <DamageType> Psychic </DamageType>
@@ -1172,7 +1184,7 @@
             <specific name="Power Usage"> Encounter </specific>
             <specific name="Action Type"> Standard Action </specific>
             <Weapon name="Mac-Fuirmidh Cittern +1">
-               <RulesElement name="Mac-Fuirmidh Cittern +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_4862" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=4862&amp;ftype=1" charelem="e2b1fe0" legality="rules-legal" />
+               <RulesElement name="Mac-Fuirmidh Cittern +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_4862" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=4862&amp;ftype=1" charelem="e2b0f20" legality="rules-legal" />
                <AttackBonus> 7 </AttackBonus>
                <Damage> 1d6+5 </Damage>
                <DamageType> Thunder </DamageType>
@@ -1189,7 +1201,7 @@
                </DamageComponents>
             </Weapon>
             <Weapon name="Wand of Psychic Ravaging +1">
-               <RulesElement name="Wand of Psychic Ravaging +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3132" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3132&amp;ftype=1" charelem="e2b0760" legality="rules-legal" />
+               <RulesElement name="Wand of Psychic Ravaging +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3132" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3132&amp;ftype=1" charelem="e2b2260" legality="rules-legal" />
                <AttackBonus> 7 </AttackBonus>
                <Damage> 1d6+5 </Damage>
                <DamageType> Thunder </DamageType>
@@ -1206,7 +1218,7 @@
                </DamageComponents>
             </Weapon>
             <Weapon name="Implement, Wand">
-               <RulesElement name="Implement, Wand" type="Gear" internal-id="ID_FMP_GEAR_14" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=14&amp;ftype=4" charelem="e2b01a0" legality="rules-legal" />
+               <RulesElement name="Implement, Wand" type="Gear" internal-id="ID_FMP_GEAR_14" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=14&amp;ftype=4" charelem="e2affe0" legality="rules-legal" />
                <AttackBonus> 6 </AttackBonus>
                <Damage> 1d6+4 </Damage>
                <DamageType> Thunder </DamageType>
@@ -1240,7 +1252,7 @@
             <specific name="Power Usage"> Daily </specific>
             <specific name="Action Type"> Standard Action </specific>
             <Weapon name="Mac-Fuirmidh Cittern +1">
-               <RulesElement name="Mac-Fuirmidh Cittern +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_4862" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=4862&amp;ftype=1" charelem="e2b1fe0" legality="rules-legal" />
+               <RulesElement name="Mac-Fuirmidh Cittern +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_4862" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=4862&amp;ftype=1" charelem="e2b0f20" legality="rules-legal" />
                <AttackBonus> 7 </AttackBonus>
                <Damage> 2d6+6 </Damage>
                <DamageType> Psychic </DamageType>
@@ -1258,7 +1270,7 @@
                </DamageComponents>
             </Weapon>
             <Weapon name="Wand of Psychic Ravaging +1">
-               <RulesElement name="Wand of Psychic Ravaging +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3132" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3132&amp;ftype=1" charelem="e2b0760" legality="rules-legal" />
+               <RulesElement name="Wand of Psychic Ravaging +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3132" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3132&amp;ftype=1" charelem="e2b2260" legality="rules-legal" />
                <AttackBonus> 7 </AttackBonus>
                <Damage> 2d6+6 </Damage>
                <DamageType> Psychic </DamageType>
@@ -1276,7 +1288,7 @@
                </DamageComponents>
             </Weapon>
             <Weapon name="Implement, Wand">
-               <RulesElement name="Implement, Wand" type="Gear" internal-id="ID_FMP_GEAR_14" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=14&amp;ftype=4" charelem="e2b01a0" legality="rules-legal" />
+               <RulesElement name="Implement, Wand" type="Gear" internal-id="ID_FMP_GEAR_14" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=14&amp;ftype=4" charelem="e2affe0" legality="rules-legal" />
                <AttackBonus> 6 </AttackBonus>
                <Damage> 2d6+5 </Damage>
                <DamageType> Psychic </DamageType>
@@ -1333,7 +1345,7 @@
             <specific name="Power Usage"> Encounter </specific>
             <specific name="Action Type"> Standard Action </specific>
             <Weapon name="Mac-Fuirmidh Cittern +1">
-               <RulesElement name="Mac-Fuirmidh Cittern +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_4862" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=4862&amp;ftype=1" charelem="e2b1fe0" legality="rules-legal" />
+               <RulesElement name="Mac-Fuirmidh Cittern +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_4862" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=4862&amp;ftype=1" charelem="e2b0f20" legality="rules-legal" />
                <AttackBonus> 7 </AttackBonus>
                <Damage> 1d10+5 </Damage>
                <DamageType> Force </DamageType>
@@ -1350,7 +1362,7 @@
                </DamageComponents>
             </Weapon>
             <Weapon name="Wand of Psychic Ravaging +1">
-               <RulesElement name="Wand of Psychic Ravaging +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3132" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3132&amp;ftype=1" charelem="e2b0760" legality="rules-legal" />
+               <RulesElement name="Wand of Psychic Ravaging +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3132" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3132&amp;ftype=1" charelem="e2b2260" legality="rules-legal" />
                <AttackBonus> 7 </AttackBonus>
                <Damage> 1d10+5 </Damage>
                <DamageType> Force </DamageType>
@@ -1367,7 +1379,7 @@
                </DamageComponents>
             </Weapon>
             <Weapon name="Implement, Wand">
-               <RulesElement name="Implement, Wand" type="Gear" internal-id="ID_FMP_GEAR_14" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=14&amp;ftype=4" charelem="e2b01a0" legality="rules-legal" />
+               <RulesElement name="Implement, Wand" type="Gear" internal-id="ID_FMP_GEAR_14" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=14&amp;ftype=4" charelem="e2affe0" legality="rules-legal" />
                <AttackBonus> 6 </AttackBonus>
                <Damage> 1d10+4 </Damage>
                <DamageType> Force </DamageType>
@@ -1397,13 +1409,14 @@
             </Weapon>
          </Power>
 
-         <Power name="Song of Discord">
+         <Power name="Compulsion">
             <specific name="Power Usage"> Daily </specific>
             <specific name="Action Type"> Standard Action </specific>
             <Weapon name="Mac-Fuirmidh Cittern +1">
-               <RulesElement name="Mac-Fuirmidh Cittern +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_4862" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=4862&amp;ftype=1" charelem="e2b1fe0" legality="rules-legal" />
+               <RulesElement name="Mac-Fuirmidh Cittern +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_4862" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=4862&amp;ftype=1" charelem="e2b0f20" legality="rules-legal" />
                <AttackBonus> 7 </AttackBonus>
-               <Damage>  </Damage>
+               <Damage> 2d8+6 </Damage>
+               <DamageType> Psychic </DamageType>
                <AttackStat> Charisma </AttackStat>
                <Defense> Will </Defense>
                <HitComponents> +4 Charisma modifier.
@@ -1411,13 +1424,17 @@
 +1 enhancement bonus.
 
                </HitComponents>
-               <DamageComponents> 
+               <DamageComponents> +4 Charisma modifier.
++1 enhancement bonus.
++1 item bonus - Wand of Psychic Ravaging +1
+
                </DamageComponents>
             </Weapon>
             <Weapon name="Wand of Psychic Ravaging +1">
-               <RulesElement name="Wand of Psychic Ravaging +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3132" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3132&amp;ftype=1" charelem="e2b0760" legality="rules-legal" />
+               <RulesElement name="Wand of Psychic Ravaging +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3132" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3132&amp;ftype=1" charelem="e2b2260" legality="rules-legal" />
                <AttackBonus> 7 </AttackBonus>
-               <Damage>  </Damage>
+               <Damage> 2d8+6 </Damage>
+               <DamageType> Psychic </DamageType>
                <AttackStat> Charisma </AttackStat>
                <Defense> Will </Defense>
                <HitComponents> +4 Charisma modifier.
@@ -1425,32 +1442,41 @@
 +1 enhancement bonus.
 
                </HitComponents>
-               <DamageComponents> 
+               <DamageComponents> +4 Charisma modifier.
++1 enhancement bonus.
++1 item bonus - Wand of Psychic Ravaging +1
+
                </DamageComponents>
             </Weapon>
             <Weapon name="Implement, Wand">
-               <RulesElement name="Implement, Wand" type="Gear" internal-id="ID_FMP_GEAR_14" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=14&amp;ftype=4" charelem="e2b01a0" legality="rules-legal" />
+               <RulesElement name="Implement, Wand" type="Gear" internal-id="ID_FMP_GEAR_14" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=14&amp;ftype=4" charelem="e2affe0" legality="rules-legal" />
                <AttackBonus> 6 </AttackBonus>
-               <Damage>  </Damage>
+               <Damage> 2d8+5 </Damage>
+               <DamageType> Psychic </DamageType>
                <AttackStat> Charisma </AttackStat>
                <Defense> Will </Defense>
                <HitComponents> +4 Charisma modifier.
 +2 half your level.
 
                </HitComponents>
-               <DamageComponents> 
+               <DamageComponents> +4 Charisma modifier.
++1 item bonus - Wand of Psychic Ravaging +1
+
                </DamageComponents>
             </Weapon>
             <Weapon name="Unarmed">
                <AttackBonus> 6 </AttackBonus>
-               <Damage>  </Damage>
+               <Damage> 2d8+5 </Damage>
+               <DamageType> Psychic </DamageType>
                <AttackStat> Charisma </AttackStat>
                <Defense> Will </Defense>
                <HitComponents> +4 Charisma modifier.
 +2 half your level.
 
                </HitComponents>
-               <DamageComponents> 
+               <DamageComponents> +4 Charisma modifier.
++1 item bonus - Wand of Psychic Ravaging +1
+
                </DamageComponents>
             </Weapon>
          </Power>
@@ -1826,7 +1852,7 @@
    </Level>
    <Level>
       <RulesElement name="5" type="Level" internal-id="ID_INTERNAL_LEVEL_5" charelem="e2b27a0" legality="rules-legal" >
-         <RulesElement name="Song of Discord" type="Power" internal-id="ID_FMP_POWER_4994" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=4994" charelem="e2af360" legality="rules-legal" />
+         <RulesElement name="Compulsion" type="Power" internal-id="ID_FMP_POWER_3100" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=3100" charelem="e2af360" legality="rules-legal" />
          <RulesElement name="" type="" charelem="e2b17e0" legality="rules-legal" />
       </RulesElement>
       <loot count="1" equip-count="1" ShowPowerCard="1" >
@@ -1864,6 +1890,16 @@
       <loot count="1" equip-count="0" ShowPowerCard="1" >
          <RulesElement name="Gentle Repose" type="Ritual" internal-id="ID_FMP_RITUAL_47" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=47" charelem="e2af9a0" legality="rules-legal" />
       </loot>
+      <loot count="1" equip-count="1" ShowPowerCard="1" >
+         <RulesElement name="Belt of Resilience (heroic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3780" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3780&amp;ftype=1" charelem="e029a00" legality="rules-legal" />
+      </loot>
+      <loot count="1" equip-count="1" ShowPowerCard="1" >
+         <RulesElement name="Finemail" type="Armor" internal-id="ID_FMP_ARMOR_34" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=34&amp;ftype=2" charelem="e02c800" legality="rules-legal" />
+         <RulesElement name="Armor of Sacrifice +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_1480" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=1480&amp;ftype=1" charelem="e02dc00" legality="rules-legal" />
+      </loot>
+      <loot count="0" equip-count="-1" ShowPowerCard="1" >
+         <RulesElement name="Hide Armor" type="Armor" internal-id="ID_FMP_ARMOR_3" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3&amp;ftype=2" charelem="e2884a0" legality="rules-legal" />
+      </loot>
    </Level>
 
 
@@ -1899,7 +1935,7 @@
       Jack Quick
    </textstring>
    <textstring name="Character Save File">
-      c:\users\russ\documents\dnd-materials\halfelf jack quick.dnd4e
+      C:\Users\russ\Documents\dnd-materials\HalfElf Jack Quick.dnd4e
    </textstring>
    <textstring name="CUR_HitPoints">
       
