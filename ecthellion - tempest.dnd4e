@@ -848,7 +848,7 @@
          </RulesElement>
          <RulesElement name="Bounding Leap" type="Power" internal-id="ID_FMP_POWER_9301" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=9301" charelem="12f89930" legality="rules-legal" />
          <RulesElement name="3" type="Level" internal-id="ID_INTERNAL_LEVEL_3" charelem="111788c0" legality="rules-legal" />
-         <RulesElement name="Rain of Blows" type="Power" internal-id="ID_FMP_POWER_268" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=268" charelem="116d0d08" legality="rules-legal" />
+         <RulesElement name="Sweeping Blow" type="Power" internal-id="ID_FMP_POWER_291" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=291" charelem="116d0d08" legality="rules-legal" />
          <RulesElement name="4" type="Level" internal-id="ID_INTERNAL_LEVEL_4" charelem="118b0ae8" legality="rules-legal" />
          <RulesElement name="Toughness" type="Feat" internal-id="ID_FMP_FEAT_171" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=171" charelem="11268d60" legality="rules-legal" >
             <specific name="Short Description"> Gain 5 additional hit points per tier </specific>
@@ -1384,24 +1384,25 @@
             <specific name="Action Type"> Move Action </specific>
          </Power>
 
-         <Power name="Rain of Blows">
+         <Power name="Sweeping Blow">
             <specific name="Power Usage"> Encounter </specific>
             <specific name="Action Type"> Standard Action </specific>
             <Weapon name="Urgrosh of Great Opportunity +1">
                <RulesElement name="Urgrosh" type="Weapon" internal-id="ID_FMP_WEAPON_69" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=69&amp;ftype=3" charelem="10a7eb08" legality="rules-legal" />
                <RulesElement name="Weapon of Great Opportunity +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_6965" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=6965&amp;ftype=1" charelem="1234a6e0" legality="rules-legal" />
-               <AttackBonus> 10 </AttackBonus>
-               <Damage> 1d12+6 </Damage>
+               <AttackBonus> 12 </AttackBonus>
+               <Damage> 1d12+10 </Damage>
                <AttackStat> Strength </AttackStat>
-               <Defense> AC, two attacks </Defense>
+               <Defense> AC </Defense>
                <HitComponents> +4 Strength modifier.
 +2 half your level.
 +2 proficiency bonus.
 +1 enhancement bonus.
 +1 bonus - Tempest Technique
-
++2 for using an axe, a flail, a heavy blade, or a pick
                </HitComponents>
-               <DamageComponents> +1 enhancement bonus.
+               <DamageComponents> +4 Strength modifier.
++1 enhancement bonus.
 +2 Feat bonus - Eladrin Soldier
 +1 bonus - Two-Weapon Fighting
 +1 (Tempest Technique) bonus - Tempest Technique
@@ -1412,46 +1413,64 @@
             <Weapon name="Sunblade Longsword +1">
                <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="11038e98" legality="rules-legal" />
                <RulesElement name="Sunblade +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2395" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=2395&amp;ftype=1" charelem="1123aae0" legality="rules-legal" />
-               <AttackBonus> 10 </AttackBonus>
-               <Damage> 1d8+3 </Damage>
+               <AttackBonus> 12 </AttackBonus>
+               <Damage> 1d8+7 </Damage>
                <AttackStat> Strength </AttackStat>
-               <Defense> AC, two attacks </Defense>
+               <Defense> AC </Defense>
                <HitComponents> +4 Strength modifier.
 +2 half your level.
 +3 proficiency bonus.
 +1 enhancement bonus.
-
++2 for using an axe, a flail, a heavy blade, or a pick
                </HitComponents>
-               <DamageComponents> +1 enhancement bonus.
+               <DamageComponents> +4 Strength modifier.
++1 enhancement bonus.
 +2 Feat bonus - Eladrin Soldier
 
                </DamageComponents>
             </Weapon>
             <Weapon name="Longsword">
                <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="130054b0" legality="rules-legal" />
-               <AttackBonus> 9 </AttackBonus>
-               <Damage> 1d8+2 </Damage>
+               <AttackBonus> 11 </AttackBonus>
+               <Damage> 1d8+6 </Damage>
                <AttackStat> Strength </AttackStat>
-               <Defense> AC, two attacks </Defense>
+               <Defense> AC </Defense>
                <HitComponents> +4 Strength modifier.
 +2 half your level.
 +3 proficiency bonus.
++2 for using an axe, a flail, a heavy blade, or a pick
+               </HitComponents>
+               <DamageComponents> +4 Strength modifier.
++2 Feat bonus - Eladrin Soldier
+
+               </DamageComponents>
+            </Weapon>
+            <Weapon name="Shortbow">
+               <RulesElement name="Shortbow" type="Weapon" internal-id="ID_FMP_WEAPON_39" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=39&amp;ftype=3" charelem="12f94208" legality="rules-legal" />
+               <AttackBonus> 8 </AttackBonus>
+               <Damage> 1d8+4 </Damage>
+               <AttackStat> Strength </AttackStat>
+               <Defense> AC </Defense>
+               <HitComponents> +4 Strength modifier.
++2 half your level.
++2 proficiency bonus.
 
                </HitComponents>
-               <DamageComponents> +2 Feat bonus - Eladrin Soldier
+               <DamageComponents> +4 Strength modifier.
 
                </DamageComponents>
             </Weapon>
             <Weapon name="Unarmed">
                <AttackBonus> 6 </AttackBonus>
-               <Damage> 1d4+0 </Damage>
+               <Damage> 1d4+4 </Damage>
                <AttackStat> Strength </AttackStat>
-               <Defense> AC, two attacks </Defense>
+               <Defense> AC </Defense>
                <HitComponents> +4 Strength modifier.
 +2 half your level.
 
                </HitComponents>
-               <DamageComponents> 
+               <DamageComponents> +4 Strength modifier.
+
                </DamageComponents>
             </Weapon>
          </Power>
@@ -2316,7 +2335,7 @@ gregor + ivan, get there at 10pm
    </Level>
    <Level>
       <RulesElement name="3" type="Level" internal-id="ID_INTERNAL_LEVEL_3" charelem="111788c0" legality="rules-legal" >
-         <RulesElement name="Rain of Blows" type="Power" internal-id="ID_FMP_POWER_268" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=268" charelem="116d0d08" legality="rules-legal" />
+         <RulesElement name="Sweeping Blow" type="Power" internal-id="ID_FMP_POWER_291" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=291" charelem="116d0d08" legality="rules-legal" />
          <RulesElement name="" type="" charelem="1127a610" legality="rules-legal" />
       </RulesElement>
       <loot count="0" equip-count="0" ShowPowerCard="1" >
