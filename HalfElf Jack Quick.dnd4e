@@ -421,7 +421,7 @@
             <statadd Level="1" requires="!Intimidate Skill Training" value="1" charelem="8dac460" />
          </Stat>
 
-         <Stat name="Nature" value="6">
+         <Stat name="Nature" value="8">
             <alias name="Nature" />
             <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="1470c6f0" />
             <statadd type="Ability" Level="1" value="1" statlink="Wisdom" abilmod="true" charelem="1470c6f0" />
@@ -433,8 +433,9 @@
             <alias name="Nature Trained" />
          </Stat>
 
-         <Stat name="Nature Misc" value="1">
+         <Stat name="Nature Misc" value="3">
             <alias name="Nature Misc" />
+            <statadd Level="1" value="2" charelem="1470b770" />
             <statadd Level="1" requires="!Nature Skill Training" value="1" charelem="8dac460" />
          </Stat>
 
@@ -665,6 +666,7 @@
             <specific name="Short Description"> I&apos;m the only one who can get you from here to Rythan Keep in less than two weeks. And I&apos;ll make sure you don&apos;t wind up in a gnoll tribe&apos;s soup cauldron. </specific>
          </RulesElement>
          <RulesElement name="Background Benefit" type="Internal" internal-id="ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT" charelem="1470d230" legality="rules-legal" />
+         <RulesElement name="Explorer/Guide Benefit" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_CHOICE_EXPLORER/GUIDE_BENEFIT" charelem="1470b770" legality="rules-legal" />
          <RulesElement name="Expansion2" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_EXPANSION2" charelem="8dac260" legality="rules-legal" />
          <RulesElement name="Expansion3" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_EXPANSION3" charelem="8dacba0" legality="rules-legal" />
          <RulesElement name="Expansion4" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_EXPANSION4" charelem="8dacd20" legality="rules-legal" />
@@ -796,12 +798,9 @@
          <RulesElement name="5" type="Level" internal-id="ID_INTERNAL_LEVEL_5" charelem="8da9ba0" legality="rules-legal" />
          <RulesElement name="Compulsion" type="Power" internal-id="ID_FMP_POWER_3100" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=3100" charelem="8da9ca0" legality="rules-legal" />
          <RulesElement name="6" type="Level" internal-id="ID_INTERNAL_LEVEL_6" charelem="1470a730" legality="rules-legal" />
-         <RulesElement name="Divine Channeler (Paladin)" type="Feat" internal-id="ID_INTERNAL_FEAT_DIVINE_CHANNELER_(PALADIN)" charelem="1470cef0" legality="rules-legal" >
-            <specific name="Short Description"> Gain one Channel Divinity power from the paladin class </specific>
+         <RulesElement name="Holy Speech" type="Feat" internal-id="ID_FMP_FEAT_1536" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1536" charelem="1470cef0" legality="rules-legal" >
+            <specific name="Short Description"> Extra success in skill challenges using Bluff, Diplomacy, or Intimidate </specific>
          </RulesElement>
-         <RulesElement name="Divine Mettle" type="Power" internal-id="ID_FMP_POWER_1746" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1746" charelem="14709930" legality="rules-legal" />
-         <RulesElement name="Channel Divinity" type="CountsAsFeature" internal-id="ID_INTERNAL_COUNTSASFEATURE_CHANNEL_DIVINITY" charelem="1470e270" legality="rules-legal" />
-         <RulesElement name="Paladin" type="CountsAsClass" internal-id="ID_INTERNAL_COUNTSASCLASS_PALADIN" charelem="147099f0" legality="rules-legal" />
          <RulesElement name="Allegro" type="Power" internal-id="ID_FMP_POWER_2372" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=2372" charelem="1470cab0" legality="rules-legal" />
          <RulesElement name="Eyebite" type="Power" internal-id="ID_FMP_POWER_1456" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1456" charelem="1470f3b0" legality="rules-legal" />
       </RulesElementTally>
@@ -1445,11 +1444,6 @@
             </Weapon>
          </Power>
 
-         <Power name="Divine Mettle">
-            <specific name="Power Usage"> Encounter </specific>
-            <specific name="Action Type"> Minor Action </specific>
-         </Power>
-
          <Power name="Allegro">
             <specific name="Power Usage"> Daily </specific>
             <specific name="Action Type"> Minor Action </specific>
@@ -1539,7 +1533,9 @@
          <RulesElement name="Expansion1" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_EXPANSION1" charelem="1470f7f0" legality="rules-legal" >
             <RulesElement name="Explorer/Guide" type="Background" internal-id="ID_FMP_BACKGROUND_41" charelem="1470baf0" legality="rules-legal" />
             <RulesElement name="Background Benefit" type="Internal" internal-id="ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT" charelem="1470d230" legality="rules-legal" >
-               <RulesElement name="" type="" charelem="1470b770" legality="rules-legal" />
+               <RulesElement name="Explorer/Guide Benefit" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_CHOICE_EXPLORER/GUIDE_BENEFIT" charelem="1470b770" legality="rules-legal" >
+                  <RulesElement name="" type="" charelem="1470b0f0" legality="rules-legal" />
+               </RulesElement>
             </RulesElement>
             <RulesElement name="" type="" charelem="14709430" legality="rules-legal" />
             <RulesElement name="" type="" charelem="1470e2b0" legality="rules-legal" />
@@ -1915,12 +1911,7 @@
    </Level>
    <Level>
       <RulesElement name="6" type="Level" internal-id="ID_INTERNAL_LEVEL_6" charelem="1470a730" legality="rules-legal" >
-         <RulesElement name="Divine Channeler (Paladin)" type="Feat" internal-id="ID_INTERNAL_FEAT_DIVINE_CHANNELER_(PALADIN)" charelem="1470cef0" legality="rules-legal" >
-            <RulesElement name="Divine Mettle" type="Power" internal-id="ID_FMP_POWER_1746" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1746" charelem="14709930" legality="rules-legal" />
-            <RulesElement name="Channel Divinity" type="CountsAsFeature" internal-id="ID_INTERNAL_COUNTSASFEATURE_CHANNEL_DIVINITY" charelem="1470e270" legality="rules-legal" />
-            <RulesElement name="Paladin" type="CountsAsClass" internal-id="ID_INTERNAL_COUNTSASCLASS_PALADIN" charelem="147099f0" legality="rules-legal" />
-            <RulesElement name="Multiclass" type="Multiclass" internal-id="ID_INTERNAL_MULTICLASS_MULTICLASS" charelem="1470df70" legality="rules-legal" />
-         </RulesElement>
+         <RulesElement name="Holy Speech" type="Feat" internal-id="ID_FMP_FEAT_1536" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1536" charelem="1470cef0" legality="rules-legal" />
          <RulesElement name="Allegro" type="Power" internal-id="ID_FMP_POWER_2372" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=2372" charelem="1470cab0" legality="rules-legal" />
          <RulesElement name="" type="" charelem="1470cc70" legality="rules-legal" />
       </RulesElement>
