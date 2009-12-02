@@ -2474,7 +2474,7 @@ leap, with just 17HP!
       +2 to opportunity attacks with heavy blade or light blade
    </textstring>
    <textstring name="LAYOUT_DATA">
-      MobilePanelsLocked=False|CurrentOrientationStyle=Vertical|NewPageLayoutAffinity=Portrait|NewPowerLayoutAffinity=Portrait|ShowJournalPages=False|ShowNotesPage=False|ShowPowerCardPages=True|ShowBasicAttackPowerCards=False|ShowOptionalCards=True|ShowNormalItemCards=False|ShowAllWeaponsForCards=False|ShowBlankPowerCardPage=False|ShowPageNumbers=True|ZoomLevel=100|PersonalizedData=True&amp;BaseStyle=PortraitPage1/LayoutStyle=Portrait|*/HEADER|*/INITIATIVE/ABILITY_SCORES/HIT_POINTS/SKILLS|*/DEFENSES/ACTION_POINTS/RACE_FEATURES;Height=151/CLASS_FEATURES;Height=215/LANGUAGES;Height=20/NOTES_BACKGROUND;Height=80|*/MOVEMENT/SENSES/BASIC_ATTACKS;Sunblade Longsword +1:Shortbow:Longsword:Unarmed (Melee):Unarmed (Range)/FEATS;Height=154.6/COINS_AND_WEALTH/PORTRAIT&amp;BaseStyle=PortraitPage2/LayoutStyle=Portrait|*|*/OTHER_EQUIPMENT;Height=240/NOTES_SESSION;Height=315/NOTES_PERSONALITY;Height=93/NOTES_APPEARANCE;Height=92/NOTES_ALLIES;Height=103|*/DAMAGE_WORKSPACE;Melee Basic Attack - Bloodclaw Urgrosh +1:Dual Strike - Bloodclaw Urgrosh +1:Distracting Spate - Bloodclaw Urgrosh +1:Ranged Basic Attack - Shortbow:Melee Basic Attack - Unarmed:Ranged Basic Attack - Unarmed/RITUALS;Height=71/MAGIC_ITEMS_PANEL|*/ATTACK_WORKSPACE;Melee Basic Attack - Bloodclaw Urgrosh +1:Melee Basic Attack - Sunblade Longsword +1:Ranged Basic Attack - Shortbow:Melee Basic Attack - Unarmed:Ranged Basic Attack - Unarmed/POWERS_PANEL
+      MobilePanelsLocked=False|CurrentOrientationStyle=Vertical|NewPageLayoutAffinity=Portrait|NewPowerLayoutAffinity=Portrait|ShowJournalPages=False|ShowNotesPage=False|ShowPowerCardPages=True|ShowBasicAttackPowerCards=False|ShowOptionalCards=True|ShowNormalItemCards=False|ShowAllWeaponsForCards=False|ShowBlankPowerCardPage=False|ShowPageNumbers=True|ZoomLevel=100|PersonalizedData=True&amp;BaseStyle=PortraitPage1/LayoutStyle=Portrait|*/HEADER|*/INITIATIVE/ABILITY_SCORES/HIT_POINTS/SKILLS|*/DEFENSES/ACTION_POINTS/RACE_FEATURES;Height=151/CLASS_FEATURES;Height=215/LANGUAGES;Height=20/NOTES_BACKGROUND;Height=80|*/MOVEMENT/SENSES/BASIC_ATTACKS;Sunblade Longsword +1:Shortbow:Unarmed (Melee):Unarmed (Range)/FEATS;Height=154.6/COINS_AND_WEALTH/PORTRAIT&amp;BaseStyle=PortraitPage2/LayoutStyle=Portrait|*|*/OTHER_EQUIPMENT;Height=240/NOTES_SESSION;Height=315/NOTES_PERSONALITY;Height=93/NOTES_APPEARANCE;Height=92/NOTES_ALLIES;Height=103|*/DAMAGE_WORKSPACE;Melee Basic Attack - Bloodclaw Double sword +1:Dual Strike - Bloodclaw Double sword +1:Distracting Spate - Bloodclaw Double sword +1:Melee Basic Attack - Sunblade Longsword +1:Ranged Basic Attack - Shortbow:Melee Basic Attack - Unarmed:Ranged Basic Attack - Unarmed/RITUALS;Height=71/MAGIC_ITEMS_PANEL|*/ATTACK_WORKSPACE;Melee Basic Attack - Bloodclaw Double sword +1:Hesitation Slash - Bloodclaw Double sword +1:Melee Basic Attack - Sunblade Longsword +1:Ranged Basic Attack - Shortbow:Melee Basic Attack - Unarmed:Ranged Basic Attack - Unarmed/POWERS_PANEL
    </textstring>
    <textstring name="USAGE_Fey Step">
       false
@@ -2543,7 +2543,7 @@ leap, with just 17HP!
       Ecthellion
    </textstring>
    <textstring name="Character Save File">
-      d:\projects\dnd-materials\ecthellion.dnd4e
+      D:\Projects\dnd-materials\ecthellion.dnd4e
    </textstring>
    <textstring name="_INTERNAL_MainHandWeapon">
       Bloodclaw Double sword +1
@@ -2624,15 +2624,11 @@ leap, with just 17HP!
   &lt;/SecondWindCard&gt;
   &lt;PowerCardBasic Visibility=&quot;Hidden&quot; IsInSpellbook=&quot;False&quot; Blank=&quot;false&quot;&gt;
     &lt;RuleID&gt;ID_INTERNAL_POWER_MELEE_BASIC_ATTACK&lt;/RuleID&gt;
-    &lt;WeaponSelections&gt;
-      &lt;WeaponSelection Name=&quot;Bloodclaw Urgrosh +1&quot; /&gt;
-    &lt;/WeaponSelections&gt;
+    &lt;WeaponSelections /&gt;
   &lt;/PowerCardBasic&gt;
   &lt;PowerCardBasic Visibility=&quot;Hidden&quot; IsInSpellbook=&quot;False&quot; Blank=&quot;false&quot;&gt;
     &lt;RuleID&gt;ID_INTERNAL_POWER_RANGED_BASIC_ATTACK&lt;/RuleID&gt;
-    &lt;WeaponSelections&gt;
-      &lt;WeaponSelection Name=&quot;Shortbow&quot; /&gt;
-    &lt;/WeaponSelections&gt;
+    &lt;WeaponSelections /&gt;
   &lt;/PowerCardBasic&gt;
   &lt;CharSummaryCard Visibility=&quot;Hidden&quot; IsInSpellbook=&quot;False&quot; /&gt;
   &lt;CharSummaryCard Visibility=&quot;Hidden&quot; IsInSpellbook=&quot;False&quot; /&gt;
@@ -2640,61 +2636,44 @@ leap, with just 17HP!
   &lt;CharSummaryCard Visibility=&quot;Hidden&quot; IsInSpellbook=&quot;False&quot; /&gt;
   &lt;PowerCardBasic Visibility=&quot;Hidden&quot; IsInSpellbook=&quot;False&quot; Blank=&quot;false&quot;&gt;
     &lt;RuleID&gt;ID_FMP_POWER_7419&lt;/RuleID&gt;
-    &lt;WeaponSelections&gt;
-      &lt;WeaponSelection Name=&quot;Bloodclaw Urgrosh +1&quot; /&gt;
-    &lt;/WeaponSelections&gt;
+    &lt;WeaponSelections /&gt;
   &lt;/PowerCardBasic&gt;
   &lt;PowerCardBasic Visibility=&quot;Visible&quot; IsInSpellbook=&quot;False&quot; Blank=&quot;false&quot;&gt;
     &lt;RuleID&gt;ID_FMP_POWER_2104&lt;/RuleID&gt;
-    &lt;WeaponSelections&gt;
-      &lt;WeaponSelection Name=&quot;Bloodclaw Urgrosh +1&quot; /&gt;
-    &lt;/WeaponSelections&gt;
+    &lt;WeaponSelections /&gt;
   &lt;/PowerCardBasic&gt;
   &lt;PowerCardBasic Visibility=&quot;Visible&quot; IsInSpellbook=&quot;False&quot; Blank=&quot;false&quot;&gt;
     &lt;RuleID&gt;ID_FMP_POWER_2105&lt;/RuleID&gt;
-    &lt;WeaponSelections&gt;
-      &lt;WeaponSelection Name=&quot;Bloodclaw Urgrosh +1&quot; /&gt;
-      &lt;WeaponSelection Name=&quot;Sunblade Longsword +1&quot; /&gt;
-    &lt;/WeaponSelections&gt;
+    &lt;WeaponSelections /&gt;
   &lt;/PowerCardBasic&gt;
   &lt;PowerCardBasic Visibility=&quot;Visible&quot; IsInSpellbook=&quot;False&quot; Blank=&quot;false&quot;&gt;
     &lt;RuleID&gt;ID_FMP_POWER_1449&lt;/RuleID&gt;
     &lt;WeaponSelections /&gt;
   &lt;/PowerCardBasic&gt;
   &lt;PowerCardBasic Visibility=&quot;Visible&quot; IsInSpellbook=&quot;False&quot; Blank=&quot;false&quot;&gt;
-    &lt;RuleID&gt;ID_FMP_POWER_291&lt;/RuleID&gt;
-    &lt;WeaponSelections&gt;
-      &lt;WeaponSelection Name=&quot;Bloodclaw Urgrosh +1&quot; /&gt;
-      &lt;WeaponSelection Name=&quot;Sunblade Longsword +1&quot; /&gt;
-    &lt;/WeaponSelections&gt;
-  &lt;/PowerCardBasic&gt;
-  &lt;PowerCardBasic Visibility=&quot;Visible&quot; IsInSpellbook=&quot;False&quot; Blank=&quot;false&quot;&gt;
     &lt;RuleID&gt;ID_FMP_POWER_2108&lt;/RuleID&gt;
-    &lt;WeaponSelections&gt;
-      &lt;WeaponSelection Name=&quot;Bloodclaw Urgrosh +1&quot; /&gt;
-      &lt;WeaponSelection Name=&quot;Sunblade Longsword +1&quot; /&gt;
-    &lt;/WeaponSelections&gt;
+    &lt;WeaponSelections /&gt;
   &lt;/PowerCardBasic&gt;
   &lt;PowerCardBasic Visibility=&quot;Visible&quot; IsInSpellbook=&quot;False&quot; Blank=&quot;false&quot;&gt;
-    &lt;RuleID&gt;ID_FMP_POWER_1431&lt;/RuleID&gt;
-    &lt;WeaponSelections&gt;
-      &lt;WeaponSelection Name=&quot;Bloodclaw Urgrosh +1&quot; /&gt;
-      &lt;WeaponSelection Name=&quot;Sunblade Longsword +1&quot; /&gt;
-    &lt;/WeaponSelections&gt;
+    &lt;RuleID&gt;ID_FMP_POWER_4230&lt;/RuleID&gt;
+    &lt;WeaponSelections /&gt;
   &lt;/PowerCardBasic&gt;
   &lt;PowerCardBasic Visibility=&quot;Visible&quot; IsInSpellbook=&quot;False&quot; Blank=&quot;false&quot;&gt;
-    &lt;RuleID&gt;ID_FMP_POWER_1436&lt;/RuleID&gt;
+    &lt;RuleID&gt;ID_FMP_POWER_4314&lt;/RuleID&gt;
+    &lt;WeaponSelections /&gt;
+  &lt;/PowerCardBasic&gt;
+  &lt;PowerCardBasic Visibility=&quot;Visible&quot; IsInSpellbook=&quot;False&quot; Blank=&quot;false&quot;&gt;
+    &lt;RuleID&gt;ID_FMP_POWER_4323&lt;/RuleID&gt;
     &lt;WeaponSelections /&gt;
   &lt;/PowerCardBasic&gt;
   &lt;PowerCardUtility Visibility=&quot;Visible&quot; IsInSpellbook=&quot;False&quot; Blank=&quot;false&quot;&gt;
     &lt;RuleID&gt;ID_FMP_POWER_9301&lt;/RuleID&gt;
     &lt;WeaponSelections /&gt;
   &lt;/PowerCardUtility&gt;
-  &lt;PowerCardNormalWeapon Visibility=&quot;Hidden&quot; IsInSpellbook=&quot;False&quot;&gt;
-    &lt;CharLootID xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
-      &lt;baseID&gt;ID_FMP_WEAPON_19&lt;/baseID&gt;
-    &lt;/CharLootID&gt;
-  &lt;/PowerCardNormalWeapon&gt;
+  &lt;PowerCardUtility Visibility=&quot;Visible&quot; IsInSpellbook=&quot;False&quot; Blank=&quot;false&quot;&gt;
+    &lt;RuleID&gt;ID_FMP_POWER_9303&lt;/RuleID&gt;
+    &lt;WeaponSelections /&gt;
+  &lt;/PowerCardUtility&gt;
   &lt;PowerCardNormalWeapon Visibility=&quot;Hidden&quot; IsInSpellbook=&quot;False&quot;&gt;
     &lt;CharLootID xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
       &lt;baseID&gt;ID_FMP_WEAPON_39&lt;/baseID&gt;
@@ -2703,11 +2682,6 @@ leap, with just 17HP!
   &lt;PowerCardNormalWeapon Visibility=&quot;Hidden&quot; IsInSpellbook=&quot;False&quot;&gt;
     &lt;CharLootID xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
       &lt;baseID&gt;ID_FMP_WEAPON_20&lt;/baseID&gt;
-    &lt;/CharLootID&gt;
-  &lt;/PowerCardNormalWeapon&gt;
-  &lt;PowerCardNormalWeapon Visibility=&quot;Hidden&quot; IsInSpellbook=&quot;False&quot;&gt;
-    &lt;CharLootID xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
-      &lt;baseID&gt;ID_FMP_WEAPON_69&lt;/baseID&gt;
     &lt;/CharLootID&gt;
   &lt;/PowerCardNormalWeapon&gt;
   &lt;PowerCardNormalItem Visibility=&quot;Hidden&quot; IsInSpellbook=&quot;False&quot;&gt;
@@ -2737,11 +2711,12 @@ leap, with just 17HP!
       &lt;baseID&gt;ID_FMP_WEAPON_69&lt;/baseID&gt;
     &lt;/CharLootID&gt;
   &lt;/PowerCardMagicWeapon&gt;
-  &lt;PowerCardMagicItem Visibility=&quot;Visible&quot; IsInSpellbook=&quot;False&quot;&gt;
+  &lt;PowerCardMagicWeapon Visibility=&quot;Visible&quot; IsInSpellbook=&quot;False&quot;&gt;
     &lt;CharLootID xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
-      &lt;baseID&gt;ID_FMP_MAGIC_ITEM_1041&lt;/baseID&gt;
+      &lt;enchantID&gt;ID_FMP_MAGIC_ITEM_1964&lt;/enchantID&gt;
+      &lt;baseID&gt;ID_FMP_WEAPON_68&lt;/baseID&gt;
     &lt;/CharLootID&gt;
-  &lt;/PowerCardMagicItem&gt;
+  &lt;/PowerCardMagicWeapon&gt;
   &lt;PowerCardMagicItem Visibility=&quot;Visible&quot; IsInSpellbook=&quot;False&quot;&gt;
     &lt;CharLootID xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
       &lt;enchantID&gt;ID_FMP_MAGIC_ITEM_1508&lt;/enchantID&gt;
