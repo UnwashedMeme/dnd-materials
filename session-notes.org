@@ -833,8 +833,46 @@ almost like a monologue, one side counseling against too much aggression
 **** triggers the draco part
 **** kills the draco-liche in his suicide trap
 **** camp in the empty cave
+* session 29 [2010-01-19 Tue]
+  CLOCK: [2010-01-19 Tue 18:41]--[2010-01-19 Tue 21:52] =>  3:11
+** told dwarven merchant about mithril and dead dragon, his secret to tell
+*** spent 42g on supplies
+** heading back north to necromancer
+** mountain raid
+*** hunters all 3 nail ecth.
+*** riding horses, speed 8
+*** assassin crits ecth.
+*** combat table
+| who       | init | turn   | hp | status  |
+|-----------+------+--------+----+---------|
+| am        |   31 | ------ |    |         |
+| dogmaster |      | ------ | 11 |         |
+| ry        | 28.1 | ------ |    |         |
+| ec        |   28 | ------ |    |         |
+| ti        |   25 | ------ |    |         |
+| ja        |   23 | -----  |    |         |
+| hunter 3  |      | -----  |  8 |         |
+| hunter 4  |      | -----  |  5 |         |
+| assassin  |      |        | 30 | B       |
+| dog 6     |      | -----  |    | run off |
+| dog 5     |      | -----  |    | run off |
+| dog 7     |      | -----  | 75 | BX      |
+| hunter 2  |      | ----   | 87 | BX      |
+| assassin  |      | --     | 54 | BX      |
+| hunter 1  |      | -      | 74 | BX      |
+#+TBLFM: @3$4='(+ 11)::@8$4='(+ 8)::@9$4='(+ 5)::@10$4='(+ 15 15)::@13$4='(+ 11 11 13 10 2 14 14)::@14$4='(+ 11 11 13 5 10 2 13 22)::@15$4='(+ 5 23 13 13)::@16$4='(+ 19 20 9 12 14)
+Called the encounter at this point, dogmaster got away
+*** interrogate hunters
+**** don't know the name of the dogmaster
+**** hired to kill us!
+**** had been hanging around to ambush us for a day
+**** bounty on our head!
+***** 1000gp
+**** all adventuring groups have a bounty on them
+**** shady places to inquire about bounty in overlook		   :plothook:
+***** including the pub where Jack died
 * treasure
-** 72 gp
+** 30 gp
 ** 2100 gp in gems, coin, etc					 :session:28:
 ** adventurer's stone
 *** attuned to us
@@ -844,6 +882,11 @@ almost like a monologue, one side counseling against too much aggression
 ** cloak of distortion
 ** lifedrinker longsword +1
 ** fireflower pendant +2
+** seal of friendship from dwarven merchant hammerfist holds 	 :session:29:
+*** dromen hammerfist
+**** 90% cost on mundane goods
+** silken rope
+** candles/torches
 * wishlist
 ** TODO ryepup
 look at consumables
@@ -867,4 +910,31 @@ look at consumables
 | ti  |      |      |    |        |
 | ja  |      |      |    |        |
 
-
+* Amulet of Passage
+** [2010-01-19 Tue] 1d10 = 8, concordance 17, pleased
+** encounter: move action, teleport up to 10 to be adjacent to an attuned ally
+** Power (Encounter ✦ Teleportation): Move Action. 
+You and each attuned ally can each use this power once per
+encounter. You teleport 10 squares into a space adjacent
+to an ally who is wearing or attuned to the Amulet.
+** Power (Daily ✦ Reliable, Teleportation): Standard Action.
+You or an attuned ally can use this power. Make an
+attack: Close burst 10; targets one creature; Intelligence
++3, Wisdom +3, or Charisma + 3 vs. Will; on a hit, the
+target disappears from its location (save ends). While the
+target is gone from its location, it can’t take actions and
+can’t be targeted. On a save, it reappears in the space it
+last occupied (or in the nearest unoccupied space of its
+choosing if that space is occupied).
+** +5 to escaping with Acrobatics, Athletics; +5 to Theivery to open locks
+** concordance changes
+| Starting Score                                                          |     5 |
+|-------------------------------------------------------------------------+-------|
+| Owner gains a level                                                     | +1d10 |
+| Owner reaches three milestones in one day                               |    +2 |
+| Owner completes a major quest (maximum 1/day)                           |    +1 |
+| Owner’s ally dies                                                       |    –1 |
+| Owner stays in the same region for 2 weeks without reaching a milestone |    –1 |
+** source
+DMG2 pg 150
+http://docs.google.com/viewer?a=v&q=cache:2mbm1r_3BqYJ:www.wizards.com/dnd/files/intheworks_dmg2.pdf+amulet+of+passage+concordence&hl=en&gl=us&sig=AHIEtbTmAB6Aq6q7PKiJIA9BvH06YHQTyQ
