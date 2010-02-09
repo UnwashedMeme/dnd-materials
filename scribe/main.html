@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>Scribe</title>
+    <script lang="javascript" type="text/javascript" src="jquery-1.4.1.min.js"></script>
+    <script lang="javascript" type="text/javascript" src="scribe.js"></script>
+    <link rel="stylesheet" type="text/css" href="scribe.css"></link>
+  </head>
+  <body>
+    <button id="x-roll-initiative">Roll Initiative!</button>
+    <div id="x-combat-summary" class="hidden">
+      <div>Start Time: <span id="x-start-time"></span></div>
+      <div>Duration: <span id="x-duration"></span></div>
+      <div>Round: <span id="x-round"></span></div>
+      <button id="x-combat-over">Combat is over</button>
+    </div>
+    <div id="x-player-container" class="hidden"></div>
+    <div id="x-templates" class="hidden">
+      <div class="x-player">
+	<h3 class="name"></h3>
+	<span class="init"></span>
+      </div>
+      
+
+      <div class="x-round">
+	Round
+	<span class="x-round-number"></span>
+	<span class="x-start"></span>
+	<span class="x-duration"></span>
+	<span class="x-end"></span>
+      </div>
+    </div>
+  </body>
+</html>
