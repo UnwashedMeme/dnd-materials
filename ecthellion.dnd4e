@@ -682,9 +682,9 @@
             <statadd value="0" />
          </Stat>
 
-         <Stat name="Weight" value="148">
+         <Stat name="Weight" value="144">
             <alias name="Weight" />
-            <statadd value="148" />
+            <statadd value="144" />
          </Stat>
 
          <Stat name="Armor Enhancement Bonus" value="2">
@@ -964,7 +964,7 @@
             <RulesElement name="Potion of Healing (heroic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_1138" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=1138&amp;ftype=1" charelem="16ae41f8" legality="rules-legal" >
             </RulesElement>
          </loot>
-         <loot count="1" equip-count="0" ShowPowerCard="1" >
+         <loot count="0" equip-count="0" ShowPowerCard="1" >
             <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="16ae4048" legality="rules-legal" >
             </RulesElement>
             <RulesElement name="Sunblade +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2395" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=2395&amp;ftype=1" charelem="16ade7b0" legality="rules-legal" >
@@ -1096,28 +1096,6 @@
 0 bonus
 +2 item bonus - Bracers of Mighty Striking (heroic tier)
 +2d6 bonus to all damage.
-
-               </DamageComponents>
-               <Conditions> +3 to attack rolls with opportunity attacks - Combat Superiority.               </Conditions>
-            </Weapon>
-            <Weapon name="Sunblade Longsword +1">
-               <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="16ae4048" legality="rules-legal" />
-               <RulesElement name="Sunblade +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2395" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=2395&amp;ftype=1" charelem="16ade7b0" legality="rules-legal" />
-               <AttackBonus> 13 </AttackBonus>
-               <Damage> 1d8+1d6+7 </Damage>
-               <AttackStat> Strength </AttackStat>
-               <Defense> AC </Defense>
-               <HitComponents> +4 Strength modifier.
-+5 half your level.
-+3 proficiency bonus.
-+1 enhancement bonus.
-
-               </HitComponents>
-               <DamageComponents> +4 Strength modifier.
-+1 enhancement bonus.
-+1d6 bonus to melee basic damage.
-0 bonus
-+2 item bonus - Bracers of Mighty Striking (heroic tier)
 
                </DamageComponents>
                <Conditions> +3 to attack rolls with opportunity attacks - Combat Superiority.               </Conditions>
@@ -1310,24 +1288,6 @@
 
                </DamageComponents>
             </Weapon>
-            <Weapon name="Sunblade Longsword +1">
-               <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="16ae4048" legality="rules-legal" />
-               <RulesElement name="Sunblade +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2395" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=2395&amp;ftype=1" charelem="16ade7b0" legality="rules-legal" />
-               <AttackBonus> 13 </AttackBonus>
-               <Damage> 1d8+5 </Damage>
-               <AttackStat> Strength </AttackStat>
-               <Defense> AC </Defense>
-               <HitComponents> +4 Strength modifier.
-+5 half your level.
-+3 proficiency bonus.
-+1 enhancement bonus.
-
-               </HitComponents>
-               <DamageComponents> +4 Strength modifier.
-+1 enhancement bonus.
-
-               </DamageComponents>
-            </Weapon>
             <Weapon name="Bloodclaw Double sword +1">
                <RulesElement name="Double sword" type="Weapon" internal-id="ID_FMP_WEAPON_68" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=68&amp;ftype=3" charelem="16ae41b0" legality="rules-legal" />
                <RulesElement name="Bloodclaw Weapon +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_1964" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=1964&amp;ftype=1" charelem="16adc128" legality="rules-legal" />
@@ -1409,24 +1369,6 @@
 +3 for using two melee weapons
                </DamageComponents>
             </Weapon>
-            <Weapon name="Sunblade Longsword +1">
-               <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="16ae4048" legality="rules-legal" />
-               <RulesElement name="Sunblade +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2395" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=2395&amp;ftype=1" charelem="16ade7b0" legality="rules-legal" />
-               <AttackBonus> 13 </AttackBonus>
-               <Damage> 2d8+5 </Damage>
-               <AttackStat> Strength </AttackStat>
-               <Defense> AC </Defense>
-               <HitComponents> +4 Strength modifier.
-+5 half your level.
-+3 proficiency bonus.
-+1 enhancement bonus.
-
-               </HitComponents>
-               <DamageComponents> +4 Strength modifier.
-+1 enhancement bonus.
-
-               </DamageComponents>
-            </Weapon>
             <Weapon name="Bloodclaw Double sword +1">
                <RulesElement name="Double sword" type="Weapon" internal-id="ID_FMP_WEAPON_68" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=68&amp;ftype=3" charelem="16ae41b0" legality="rules-legal" />
                <RulesElement name="Bloodclaw Weapon +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_1964" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=1964&amp;ftype=1" charelem="16adc128" legality="rules-legal" />
@@ -1505,24 +1447,6 @@
 +0 bonus - Tempest Technique
 +1 bonus - Two-Weapon Fighting
 +2d6 bonus to all damage.
-
-               </DamageComponents>
-            </Weapon>
-            <Weapon name="Sunblade Longsword +1">
-               <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="16ae4048" legality="rules-legal" />
-               <RulesElement name="Sunblade +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2395" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=2395&amp;ftype=1" charelem="16ade7b0" legality="rules-legal" />
-               <AttackBonus> 13 </AttackBonus>
-               <Damage> 1d8+5 </Damage>
-               <AttackStat> Strength </AttackStat>
-               <Defense> AC </Defense>
-               <HitComponents> +4 Strength modifier.
-+5 half your level.
-+3 proficiency bonus.
-+1 enhancement bonus.
-
-               </HitComponents>
-               <DamageComponents> +4 Strength modifier.
-+1 enhancement bonus.
 
                </DamageComponents>
             </Weapon>
@@ -1611,23 +1535,6 @@
 
                </DamageComponents>
             </Weapon>
-            <Weapon name="Sunblade Longsword +1">
-               <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="16ae4048" legality="rules-legal" />
-               <RulesElement name="Sunblade +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2395" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=2395&amp;ftype=1" charelem="16ade7b0" legality="rules-legal" />
-               <AttackBonus> 13 </AttackBonus>
-               <Damage> 1d8+1 </Damage>
-               <AttackStat> Strength </AttackStat>
-               <Defense> AC, two attacks </Defense>
-               <HitComponents> +4 Strength modifier.
-+5 half your level.
-+3 proficiency bonus.
-+1 enhancement bonus.
-
-               </HitComponents>
-               <DamageComponents> +1 enhancement bonus.
-
-               </DamageComponents>
-            </Weapon>
             <Weapon name="Bloodclaw Double sword +1">
                <RulesElement name="Double sword" type="Weapon" internal-id="ID_FMP_WEAPON_68" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=68&amp;ftype=3" charelem="16ae41b0" legality="rules-legal" />
                <RulesElement name="Bloodclaw Weapon +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_1964" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=1964&amp;ftype=1" charelem="16adc128" legality="rules-legal" />
@@ -1713,24 +1620,6 @@
 +0 bonus - Tempest Technique
 +1 bonus - Two-Weapon Fighting
 +2d6 bonus to all damage.
-
-               </DamageComponents>
-            </Weapon>
-            <Weapon name="Sunblade Longsword +1">
-               <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="16ae4048" legality="rules-legal" />
-               <RulesElement name="Sunblade +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2395" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=2395&amp;ftype=1" charelem="16ade7b0" legality="rules-legal" />
-               <AttackBonus> 13 </AttackBonus>
-               <Damage> 1d8+5 </Damage>
-               <AttackStat> Strength </AttackStat>
-               <Defense> AC </Defense>
-               <HitComponents> +4 Strength modifier.
-+5 half your level.
-+3 proficiency bonus.
-+1 enhancement bonus.
-
-               </HitComponents>
-               <DamageComponents> +4 Strength modifier.
-+1 enhancement bonus.
 
                </DamageComponents>
             </Weapon>
@@ -1827,24 +1716,6 @@
 +0 bonus - Tempest Technique
 +1 bonus - Two-Weapon Fighting
 +2d6 bonus to all damage.
-
-               </DamageComponents>
-            </Weapon>
-            <Weapon name="Sunblade Longsword +1">
-               <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="16ae4048" legality="rules-legal" />
-               <RulesElement name="Sunblade +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2395" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=2395&amp;ftype=1" charelem="16ade7b0" legality="rules-legal" />
-               <AttackBonus> 13 </AttackBonus>
-               <Damage> 3d8+5 </Damage>
-               <AttackStat> Strength </AttackStat>
-               <Defense> AC </Defense>
-               <HitComponents> +4 Strength modifier.
-+5 half your level.
-+3 proficiency bonus.
-+1 enhancement bonus.
-
-               </HitComponents>
-               <DamageComponents> +4 Strength modifier.
-+1 enhancement bonus.
 
                </DamageComponents>
             </Weapon>
@@ -3029,6 +2900,10 @@ leap, with just 17HP!
          <RulesElement name="Fighter&apos;s Grit" type="Power" internal-id="ID_FMP_POWER_10512" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=10512" charelem="16ae6c28" legality="rules-legal" />
          <RulesElement name="" type="" charelem="16ae6c70" legality="rules-legal" />
       </RulesElement>
+      <loot count="-1" equip-count="0" ShowPowerCard="1" >
+         <RulesElement name="Longsword" type="Weapon" internal-id="ID_FMP_WEAPON_19" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=19&amp;ftype=3" charelem="16ae6a78" legality="rules-legal" />
+         <RulesElement name="Sunblade +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2395" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=2395&amp;ftype=1" charelem="16ae85c0" legality="rules-legal" />
+      </loot>
    </Level>
 
 
@@ -3169,7 +3044,7 @@ leap, with just 17HP!
       Ecthellion
    </textstring>
    <textstring name="Character Save File">
-      d:\projects\dnd-materials\ecthellion.dnd4e
+      D:\Projects\dnd-materials\ecthellion.dnd4e
    </textstring>
    <textstring name="_INTERNAL_MainHandWeapon">
       Challenge-Seeking Double sword +3
