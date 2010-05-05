@@ -1259,6 +1259,58 @@ crit fail ryepup's stealth check!
 **** 5600 worth of residium
 *** back at kenku village
 **** got ammonia back from petrification
+* session 39 [2010-05-04 Tue]
+** kill dragons!
+*** mountainous area - 42 nature
+*** volcanic dragons - stripy orange
+**** fire, radiate heat, growing aura
+**** best bet is vulnerabilities or guile
+**** large elemental magical beasts 2x2
+***** aura 2, enemies gain vulnerable 5 fire
+***** resist 20 fire
+***** clumsy flight - poor manueovering, likely to crash in enclosed area
+****** 8 fly speed
+***** bite, claw attacks
+***** no fear aura
+***** can grow fire aura, when reaches 10, can burst area to do damage inside the aura
+****** might be able to kill aura with magic weapons, but won't work consistently
+****** growing is a standard action
+***** weakness: disadvantaged in closed terrain
+***** sleep in volcano
+*** natural elemental creature
+*** plan:
+**** make magical consumables, make magic arrows
+***** 4 lvl 14 potions of resistence 800x4
+***** 5 lvl 4
+***** 5 potions of regeneration 160
+| cost | amt | item                      | total |
+|  800 |   4 | lvl 14 resist 10 fire     |  3200 |
+|   40 |   4 | lvl 4 resist 5 fire       |   160 |
+|  160 |   2 | regen                     |   320 |
+|   30 |  20 | freezing arrows, slow 1d6 |   600 |
+|   30 | 100 | spider bolts for kenku    |  3000 |
+|      |     |                           |  7280 |
+#+TBLFM: @2$4='(* 4 800)::@3$4='(* 4 40)::@4$4='(* 2 160)::@5$4='(* 20 30)::@7$4='(+ 3200 160 320 600 3000)
+**** arm and fortify the town
+**** peasants with crossbows
+**** run for residium
+**** one ballista
+***** 2d10
+*** dragon combat!
+| who           | init | turn    |  hp | status              |
+|---------------+------+---------+-----+---------------------|
+| copper dragon |      | ------- | 258 | bloodied, slowed    |
+| kenku 1       |   26 | ------  |     | +8 gold             |
+| ry            |   24 | ------  |     |                     |
+| ry-eagle      |      | -       |     | 35                  |
+| am            |   32 | ------  |     |                     |
+| ec            |   16 | ----x-  |     |                     |
+| kenku 2       |      | ------  |     | +8 copper           |
+| ti            |   29 | ------  |     |                     |
+| ja            |    9 | ------  |     |                     |
+| gold dragon   |      | ------  | 231 | X, bloodied, slowed |
+#+TBLFM: @2$4='(+ 12 6 6 10 25 7 3 9 10 27 15 8 15 19 30 16 24 11 5)::@11$4='(+ 12 13 34 19 12 17 16 36 6 12 10 11 13 3 17)
+
 * treasure
 ** 30 gp
 ** 2100 gp in gems, coin, etc					 :session:28:
