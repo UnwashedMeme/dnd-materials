@@ -81,7 +81,9 @@ class Roll {
   public function attack() {
     $atkRoll = self::roll(1, 20);
     if ($atkRoll == 1) return "*** CRIT FAIL ***\n";
-    $crit = $atkRoll == 20;
+    $crit = false;
+    if ($atkRoll >= 18 && $this->weapon == self::WEAP_SUB_DAGGER_2)
+      $crit = true;
     $name = $baseATK = $baseDMG = $sides = null;
     // all components of the attack and damage will be placed in these queues
     $qATK = array(); $qDMG = array();
