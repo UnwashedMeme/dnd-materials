@@ -121,7 +121,7 @@ class Roll {
       $qATK["nimble blade"] = 1;
     }
     if ($this->sneak) {
-      $qDMG['sneak attack (2d8)'] = self::roll(2, 8);
+      $qDMG['sneak attack (3d8)'] = self::roll(3, 8);
       $qDMG['sneak attack bonus'] = 4;
     }
     // build the description of what the hell happened
