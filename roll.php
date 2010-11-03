@@ -11,12 +11,13 @@ $roll = new Roll();
 $roll->weapon = Roll::WEAP_SUB_DAGGER_2; // default
 
 // process command line arguments
-$opts = getopt('csfbw:');
+$opts = getopt('csfbw:m');
 if ($opts === false) die("Bad arguments!\n");
 if (array_key_exists('c', $opts)) $roll->ca = true;
 if (array_key_exists('s', $opts)) $roll->sneak = true;
 if (array_key_exists('f', $opts)) $roll->furious = true;
 if (array_key_exists('b', $opts)) $roll->brutal = true;
+if (array_key_exists('m', $opts)) $roll->meditation = true;
 if (array_key_exists('w', $opts)) {
   if ($opts['w'] == 'dag')
     $roll->weapon = Roll::WEAP_SUB_DAGGER_2;
@@ -51,6 +52,9 @@ class Roll {
 
   /** True if this is a Furious Assault. */
   public $furious = false;
+
+  /** True if this is a Meditation of the Blade. */
+  public $mediation = false;
 
   /** The weapon being used; see the WEAP_ constants. */
   public $weapon = null;
@@ -91,7 +95,8 @@ class Roll {
     if ($this->weapon == self::WEAP_SUB_DAGGER_2) {
       $name = "subtle dagger +2";
       $sides = 4;
-      $baseATK = 17;
+      if ($this->meditation) $sides = 6;
+      $baseATK = 18;
       $baseDMG = 7;
       if ($this->ca) $qDMG["subtle weapon"] = 2;
       if ($crit) $qDMG['critical damage (2d6)'] = self::roll(2, 6);
@@ -99,7 +104,7 @@ class Roll {
     elseif ($this->weapon == self::WEAP_DIS_SHURIKEN_2) {
       $name = "distance shuriken +2";
       $sides = 6;
-      $baseATK = 16;
+      $baseATK = 17;
       $baseDMG = 7;
     }
     elseif ($this->weapon == self::WEAP_VIC_SHORT_2) {
@@ -121,7 +126,7 @@ class Roll {
       $qATK["nimble blade"] = 1;
     }
     if ($this->sneak) {
-      $qDMG['sneak attack (3d8)'] = self::roll(3, 8);
+      $qDMG['sneak attack (3d8)'] = self::roll(3, 8, $crit);
       $qDMG['sneak attack bonus'] = 4;
     }
     // build the description of what the hell happened
