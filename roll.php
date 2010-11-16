@@ -54,7 +54,7 @@ class Roll {
   public $furious = false;
 
   /** True if this is a Meditation of the Blade. */
-  public $mediation = false;
+  public $meditation = false;
 
   /** The weapon being used; see the WEAP_ constants. */
   public $weapon = null;
