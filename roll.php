@@ -11,13 +11,24 @@ $roll = new Roll();
 $roll->weapon = Roll::WEAP_SUB_DAGGER_2; // default
 
 // process command line arguments
-$opts = getopt('csfbw:m');
-if ($opts === false) die("Bad arguments!\n");
+$opts = getopt('csbmhw:');
+$usage = "USAGE: $argv[0]\n" .
+  "  [-c] Ammonia has Combat Advantage\n" .
+  "  [-s] Ammonia deals Sneak Attack damage\n" .
+  "  [-b] Ammonia deals Brutal Scoundrel damage (e.g. Nasty Backswing)\n" .
+  "  [-m] Ammonia is using Mediation of the Blade\n" .
+  "  [-h] Displays this help message\n" .
+  "  [-w <weapon>] Ammonia's weapon (defaults to 'dag'). Weapons: \n" .
+  "  \tdag = Subtle Dagger +2\n" . 
+  "  \tshuriken = Distance Shuriken +2\n" . 
+  "  \tshort = Vicious Short Sword +2\n";
+if ($opts === false) die("Bad arguments!\n$usage");
+$help = false;
 if (array_key_exists('c', $opts)) $roll->ca = true;
 if (array_key_exists('s', $opts)) $roll->sneak = true;
-if (array_key_exists('f', $opts)) $roll->furious = true;
 if (array_key_exists('b', $opts)) $roll->brutal = true;
 if (array_key_exists('m', $opts)) $roll->meditation = true;
+if (array_key_exists('h', $opts)) $help = true;
 if (array_key_exists('w', $opts)) {
   if ($opts['w'] == 'dag')
     $roll->weapon = Roll::WEAP_SUB_DAGGER_2;
@@ -28,7 +39,8 @@ if (array_key_exists('w', $opts)) {
   else throw new Exception("Invalid weapon: " . $opts['w']);
 }
 
-echo $roll->attack();
+if ($help) die($usage);
+else echo $roll->attack();
 
 /**
  * A class to calculate Ammonia Puk's attack and damage values.
@@ -49,9 +61,6 @@ class Roll {
 
   /** True if the damage is modified by Brutal Scoundrel. */
   public $brutal = false;
-
-  /** True if this is a Furious Assault. */
-  public $furious = false;
 
   /** True if this is a Meditation of the Blade. */
   public $meditation = false;
@@ -118,8 +127,6 @@ class Roll {
     $qATK["base attack ($name)"] = $baseATK;
     $qDMG["$name damage (1d$sides)"] = self::roll(1, $sides, $crit);
     $qDMG["$name damage (base)"] = $baseDMG;
-    if ($this->furious)
-      $qDMG["furious assault (1d$sides)"] = self::roll(1, $sides, $crit);
     if ($this->brutal) $qDMG['brutal scoundral'] = 4;
     if ($this->ca) {
       $qATK["combat advantage"] = 2;
