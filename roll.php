@@ -105,22 +105,22 @@ class Roll {
       $name = "subtle dagger +2";
       $sides = 4;
       if ($this->meditation) $sides = 6;
-      $baseATK = 18;
-      $baseDMG = 7;
+      $baseATK = 20;
+      $baseDMG = 8;
       if ($this->ca) $qDMG["subtle weapon"] = 2;
       if ($crit) $qDMG['critical damage (2d6)'] = self::roll(2, 6);
     }
     elseif ($this->weapon == self::WEAP_DIS_SHURIKEN_2) {
       $name = "distance shuriken +2";
       $sides = 6;
-      $baseATK = 17;
-      $baseDMG = 7;
+      $baseATK = 19;
+      $baseDMG = 8;
     }
     elseif ($this->weapon == self::WEAP_VIC_SHORT_2) {
       $name = "vicious short sword +2";
       $sides = 6;
-      $baseATK = 16;
-      $baseDMG = 7;
+      $baseATK = 19;
+      $baseDMG = 8;
       if ($crit) $qDMG['critical damage (2d12)'] = self::roll(2, 12);
     }
     else throw new Exception("Invalid weapon: $this->weapon");
@@ -134,7 +134,7 @@ class Roll {
     }
     if ($this->sneak) {
       $qDMG['sneak attack (3d8)'] = self::roll(3, 8, $crit);
-      $qDMG['sneak attack bonus'] = 4;
+      $qDMG['sneak attack bonus'] = 5;
     }
     // build the description of what the hell happened
     $s = '';
