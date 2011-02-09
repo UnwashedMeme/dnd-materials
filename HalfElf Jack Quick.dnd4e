@@ -142,7 +142,7 @@
             <statadd type="Enhancement" Level="14" value="2" charelem="1e994fa0" />
          </Stat>
 
-         <Stat value="21" >
+         <Stat value="23" >
             <alias name="Fortitude Defense" />
             <alias name="Fortitude" />
             <statadd Level="1" value="10" charelem="1e9a7c40" />
@@ -150,10 +150,10 @@
             <statadd type="Ability" Level="1" value="1" statlink="Strength" abilmod="true" charelem="1e9a7c40" />
             <statadd type="Ability" Level="1" value="1" statlink="Constitution" abilmod="true" charelem="1e9a7c40" />
             <statadd type="Class" Level="1" value="1" statlink="Fortitude Defense Class Bonus" charelem="1e9a7c40" />
-            <statadd type="Enhancement" Level="14" value="2" charelem="1e98c3a0" />
+            <statadd type="Enhancement" Level="14" value="4" charelem="1e5a27d0" />
          </Stat>
 
-         <Stat value="24" >
+         <Stat value="26" >
             <alias name="Reflex Defense" />
             <alias name="Reflex" />
             <statadd Level="1" value="10" charelem="1e9a7c40" />
@@ -162,10 +162,10 @@
             <statadd type="Ability" Level="1" value="1" statlink="Intelligence" abilmod="true" charelem="1e9a7c40" />
             <statadd type="Class" Level="1" value="1" statlink="Reflex Defense Class Bonus" charelem="1e9a7c40" />
             <statadd Level="14" requires="!Armor Proficiency (Chainmail)" value="-2" charelem="1e994c80" />
-            <statadd type="Enhancement" Level="14" value="2" charelem="1e98c3a0" />
+            <statadd type="Enhancement" Level="14" value="4" charelem="1e5a27d0" />
          </Stat>
 
-         <Stat value="26" >
+         <Stat value="28" >
             <alias name="Will Defense" />
             <alias name="Will" />
             <statadd Level="1" value="10" charelem="1e9a7c40" />
@@ -173,7 +173,7 @@
             <statadd type="Ability" Level="1" value="1" statlink="Wisdom" abilmod="true" charelem="1e9a7c40" />
             <statadd type="Ability" Level="1" value="1" statlink="Charisma" abilmod="true" charelem="1e9a7c40" />
             <statadd type="Class" Level="1" value="1" statlink="Will Defense Class Bonus" charelem="1e9a7c40" />
-            <statadd type="Enhancement" Level="14" value="2" charelem="1e98c3a0" />
+            <statadd type="Enhancement" Level="14" value="4" charelem="1e5a27d0" />
          </Stat>
 
          <Stat value="3" >
@@ -355,7 +355,7 @@
             <statadd Level="1" requires="!Bluff Skill Training" value="1" charelem="1e9a8190" />
          </Stat>
 
-         <Stat value="20" >
+         <Stat value="24" >
             <alias name="Diplomacy" />
             <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="1e9a4860" />
             <statadd type="Ability" Level="1" value="1" statlink="Charisma" abilmod="true" charelem="1e9a4860" />
@@ -368,10 +368,11 @@
             <statadd type="trained" Level="1" value="5" charelem="1e9a8410" />
          </Stat>
 
-         <Stat value="2" >
+         <Stat value="6" >
             <alias name="Diplomacy Misc" />
             <statadd type="Racial" Level="1" value="2" charelem="1e9a6610" />
             <statadd Level="1" requires="!Diplomacy Skill Training" value="1" charelem="1e9a8190" />
+            <statadd type="item" Level="14" value="4" charelem="1e5a27d0" />
          </Stat>
 
          <Stat value="18" >
@@ -412,7 +413,7 @@
             <statadd Level="1" requires="!Endurance Skill Training" value="1" charelem="1e9a8190" />
          </Stat>
 
-         <Stat value="17" >
+         <Stat value="15" >
             <alias name="Heal" />
             <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="1e9a4860" />
             <statadd type="Ability" Level="1" value="1" statlink="Wisdom" abilmod="true" charelem="1e9a4860" />
@@ -425,10 +426,9 @@
             <statadd type="trained" Level="11" value="5" charelem="1e9927f0" />
          </Stat>
 
-         <Stat value="2" >
+         <Stat value="0" >
             <alias name="Heal Misc" />
             <statadd Level="1" requires="!Heal Skill Training" value="1" charelem="1e9a8190" />
-            <statadd type="item" Level="14" value="2" charelem="1e98c3a0" />
          </Stat>
 
          <Stat value="19" >
@@ -724,6 +724,16 @@
             <statadd Level="14" value="1000" charelem="1e98dd90" />
          </Stat>
 
+         <Stat value="1" >
+            <alias name="cold:damage" />
+            <statadd type="item" Level="14" value="1" charelem="1e5a4f30" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="damage rolls(Freezing Arrow +2)" />
+            <statadd String="+2d6" Level="14" value="0" />
+         </Stat>
+
       </StatBlock>
 
       <!--
@@ -973,6 +983,9 @@
          <RulesElement name="Warlock" type="CountsAsClass" internal-id="ID_INTERNAL_COUNTSASCLASS_WARLOCK" charelem="1e5a14c0" legality="rules-legal" />
          <RulesElement name="Charisma" type="Ability Increase (Level 14)" internal-id="ID_INTERNAL_ABILITY_INCREASE_(LEVEL_14)_CHARISMA" charelem="1e98b680" legality="rules-legal" />
          <RulesElement name="Wisdom" type="Ability Increase (Level 14)" internal-id="ID_INTERNAL_ABILITY_INCREASE_(LEVEL_14)_WISDOM" charelem="1e98b360" legality="rules-legal" />
+         <RulesElement name="Ghost Sound" type="Power" internal-id="ID_FMP_POWER_1217" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1217" charelem="1e5a34a0" legality="rules-legal" />
+         <RulesElement name="Prestidigitation" type="Power" internal-id="ID_FMP_POWER_1930" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1930" charelem="1e5a0fc0" legality="rules-legal" />
+         <RulesElement name="Ray of Frost" type="Power" internal-id="ID_FMP_POWER_1167" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1167" charelem="1e5a2c30" legality="rules-legal" />
       </RulesElementTally>
 
 
@@ -1222,11 +1235,11 @@
             <RulesElement name="Mordenkainen&apos;s Joining" type="Ritual" internal-id="ID_FMP_RITUAL_116" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=116" charelem="1e98c0d0" legality="rules-legal" >
             </RulesElement>
          </loot>
-         <loot count="0" equip-count="0" ShowPowerCard="1" >
+         <loot count="1" equip-count="0" ShowPowerCard="1" >
             <RulesElement name="Arcane Barrier" type="Ritual" internal-id="ID_FMP_RITUAL_100" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=100" charelem="1e98c260" legality="rules-legal" >
             </RulesElement>
          </loot>
-         <loot count="1" equip-count="1" ShowPowerCard="1" >
+         <loot count="1" equip-count="0" ShowPowerCard="1" >
             <RulesElement name="Medic&apos;s Amulet +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_7061" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=7061&amp;ftype=1" charelem="1e98c3a0" legality="rules-legal" >
             </RulesElement>
          </loot>
@@ -1462,6 +1475,94 @@
             <RulesElement name="Cure Disease" type="Ritual" internal-id="ID_FMP_RITUAL_6" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=6" charelem="1e99bcb0" legality="rules-legal" >
             </RulesElement>
          </loot>
+         <loot count="1" equip-count="1" ShowPowerCard="1" >
+            <RulesElement name="Peacemaker&apos;s Periapt +4" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3692" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3692&amp;ftype=1" charelem="1e5a27d0" legality="rules-legal" >
+            </RulesElement>
+         </loot>
+         <loot count="1" equip-count="1" ShowPowerCard="1" >
+            <RulesElement name="Magician&apos;s Ring (paragon tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3733" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3733&amp;ftype=1" charelem="1e5a2370" legality="rules-legal" >
+               <RulesElement name="Ghost Sound" type="Power" internal-id="ID_FMP_POWER_1217" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1217" charelem="1e5a34a0" legality="rules-legal" >
+                  <specific name="Power Usage" > At-Will </specific>
+                  <specific name="Action Type" > Standard action </specific>
+               </RulesElement>
+               <RulesElement name="Prestidigitation" type="Power" internal-id="ID_FMP_POWER_1930" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1930" charelem="1e5a0fc0" legality="rules-legal" >
+                  <specific name="Power Usage" > At-Will </specific>
+                  <specific name="Action Type" > Standard action </specific>
+               </RulesElement>
+            </RulesElement>
+         </loot>
+         <loot count="1" equip-count="0" ShowPowerCard="1" >
+            <RulesElement name="Telepathic Bond" type="Ritual" internal-id="ID_FMP_RITUAL_229" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=229" charelem="1e5a1bf0" legality="rules-legal" >
+            </RulesElement>
+         </loot>
+         <loot count="1" equip-count="0" ShowPowerCard="1" >
+            <RulesElement name="Astral Guide" type="Ritual" internal-id="ID_FMP_RITUAL_168" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=168" charelem="1e5a4a30" legality="rules-legal" >
+            </RulesElement>
+         </loot>
+         <loot count="1" equip-count="0" ShowPowerCard="1" >
+            <RulesElement name="Enhance Vessel" type="Ritual" internal-id="ID_FMP_RITUAL_258" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=258" charelem="1e5a1d80" legality="rules-legal" >
+            </RulesElement>
+         </loot>
+         <loot count="1" equip-count="0" ShowPowerCard="1" >
+            <RulesElement name="Banish Illusions" type="Ritual" internal-id="ID_FMP_RITUAL_255" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=255" charelem="1e5a6f10" legality="rules-legal" >
+            </RulesElement>
+         </loot>
+         <loot count="1" equip-count="0" ShowPowerCard="1" >
+            <RulesElement name="Elemental Transference" type="Ritual" internal-id="ID_FMP_RITUAL_172" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=172" charelem="1e5a0660" legality="rules-legal" >
+            </RulesElement>
+         </loot>
+         <loot count="1" equip-count="0" ShowPowerCard="1" >
+            <RulesElement name="Mark of Justice" type="Ritual" internal-id="ID_FMP_RITUAL_277" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=277" charelem="1e5a5020" legality="rules-legal" >
+            </RulesElement>
+         </loot>
+         <loot count="1" equip-count="0" ShowPowerCard="1" >
+            <RulesElement name="Control Weather" type="Ritual" internal-id="ID_FMP_RITUAL_194" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=194" charelem="1e5a28c0" legality="rules-legal" >
+            </RulesElement>
+         </loot>
+         <loot count="1" equip-count="0" ShowPowerCard="1" >
+            <RulesElement name="Pyrotechnics" type="Ritual" internal-id="ID_FMP_RITUAL_200" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=200" charelem="1e5a4e90" legality="rules-legal" >
+            </RulesElement>
+         </loot>
+         <loot count="1" equip-count="0" ShowPowerCard="1" >
+            <RulesElement name="Lullaby" type="Ritual" internal-id="ID_FMP_RITUAL_199" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=199" charelem="1e5a0070" legality="rules-legal" >
+            </RulesElement>
+         </loot>
+         <loot count="1" equip-count="0" ShowPowerCard="1" >
+            <RulesElement name="Knock" type="Ritual" internal-id="ID_FMP_RITUAL_22" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=22" charelem="1e5a3040" legality="rules-legal" >
+            </RulesElement>
+         </loot>
+         <loot count="1" equip-count="0" ShowPowerCard="1" >
+            <RulesElement name="Magic Circle" type="Ritual" internal-id="ID_FMP_RITUAL_49" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=49" charelem="1e5a1ec0" legality="rules-legal" >
+            </RulesElement>
+         </loot>
+         <loot count="1" equip-count="0" ShowPowerCard="1" >
+            <RulesElement name="Self-Holding Bag" type="Ritual" internal-id="ID_FMP_RITUAL_336" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=336" charelem="1e5a2a50" legality="rules-legal" >
+            </RulesElement>
+         </loot>
+         <loot count="1" equip-count="1" ShowPowerCard="1" >
+            <RulesElement name="Wand of Cold +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3123" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3123&amp;ftype=1" charelem="1e5a4f30" legality="rules-legal" >
+               <RulesElement name="Ray of Frost" type="Power" internal-id="ID_FMP_POWER_1167" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1167" charelem="1e5a2c30" legality="rules-legal" >
+                  <specific name="Power Usage" > Encounter </specific>
+                  <specific name="Action Type" > Standard action </specific>
+               </RulesElement>
+            </RulesElement>
+         </loot>
+         <loot count="5" equip-count="0" ShowPowerCard="1" >
+            <RulesElement name="Unguent of Darkvision (paragon tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_4044" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=4044&amp;ftype=1" charelem="1e5a1c90" legality="rules-legal" >
+            </RulesElement>
+         </loot>
+         <loot count="1" equip-count="0" ShowPowerCard="1" >
+            <RulesElement name="Blackgate Rune (paragon tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_4869" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=4869&amp;ftype=1" charelem="1e5a2aa0" legality="rules-legal" >
+            </RulesElement>
+         </loot>
+         <loot count="1" equip-count="0" ShowPowerCard="1" >
+            <RulesElement name="Nail of Sealing (heroic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_4040" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=4040&amp;ftype=1" charelem="1e5a3ae0" legality="rules-legal" >
+            </RulesElement>
+         </loot>
+         <loot count="10" equip-count="0" ShowPowerCard="1" >
+            <RulesElement name="Freezing Arrow +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_6239" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=6239&amp;ftype=1" charelem="1e59f350" legality="rules-legal" >
+            </RulesElement>
+         </loot>
       </LootTally>
 
       <!--
@@ -1510,6 +1611,23 @@
          <Power name="Chilling Cloud" >
             <specific name="Power Usage" > Encounter </specific>
             <specific name="Action Type" > Standard action </specific>
+            <Weapon name="Wand of Cold +2" >
+               <RulesElement name="Wand of Cold +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3123" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3123&amp;ftype=1" charelem="1e5a4f30" legality="rules-legal" >
+                  <RulesElement name="Ray of Frost" type="Power" internal-id="ID_FMP_POWER_1167" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1167" charelem="1e5a2c30" legality="rules-legal" />
+               </RulesElement>
+               <AttackBonus> 13 </AttackBonus>
+               <Damage> 4 </Damage>
+               <AttackStat> Intelligence </AttackStat>
+               <Defense> Fortitude </Defense>
+               <HitComponents> +4 Intelligence modifier.
++7 half your level.
++2 enhancement bonus.
+
+               </HitComponents>
+               <DamageComponents> +4 Intelligence modifier.
+
+               </DamageComponents>
+            </Weapon>
             <Weapon name="Wand of Psychic Ravaging +1" >
                <RulesElement name="Wand of Psychic Ravaging +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3132" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3132&amp;ftype=1" charelem="1e99a4a0" legality="rules-legal" >
                   <RulesElement name="Eyebite" type="Power" internal-id="ID_FMP_POWER_1456" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1456" charelem="1e9945f0" legality="rules-legal" />
@@ -1581,6 +1699,23 @@
          <Power name="Staggering Note" >
             <specific name="Power Usage" > At-Will </specific>
             <specific name="Action Type" > Standard action </specific>
+            <Weapon name="Wand of Cold +2" >
+               <RulesElement name="Wand of Cold +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3123" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3123&amp;ftype=1" charelem="1e5a4f30" legality="rules-legal" >
+                  <RulesElement name="Ray of Frost" type="Power" internal-id="ID_FMP_POWER_1167" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1167" charelem="1e5a2c30" legality="rules-legal" />
+               </RulesElement>
+               <AttackBonus> 15 </AttackBonus>
+               <Damage> 6 </Damage>
+               <AttackStat> Charisma </AttackStat>
+               <Defense> Will </Defense>
+               <HitComponents> +6 Charisma modifier.
++7 half your level.
++2 enhancement bonus.
+
+               </HitComponents>
+               <DamageComponents> +6 Charisma modifier.
+
+               </DamageComponents>
+            </Weapon>
             <Weapon name="Wand of Psychic Ravaging +1" >
                <RulesElement name="Wand of Psychic Ravaging +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3132" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3132&amp;ftype=1" charelem="1e99a4a0" legality="rules-legal" >
                   <RulesElement name="Eyebite" type="Power" internal-id="ID_FMP_POWER_1456" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1456" charelem="1e9945f0" legality="rules-legal" />
@@ -1631,6 +1766,26 @@
          <Power name="Vicious Mockery" >
             <specific name="Power Usage" > At-Will </specific>
             <specific name="Action Type" > Standard action </specific>
+            <Weapon name="Wand of Cold +2" >
+               <RulesElement name="Wand of Cold +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3123" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3123&amp;ftype=1" charelem="1e5a4f30" legality="rules-legal" >
+                  <RulesElement name="Ray of Frost" type="Power" internal-id="ID_FMP_POWER_1167" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1167" charelem="1e5a2c30" legality="rules-legal" />
+               </RulesElement>
+               <AttackBonus> 15 </AttackBonus>
+               <Damage> 1d6+9 </Damage>
+               <DamageType> Psychic </DamageType>
+               <AttackStat> Charisma </AttackStat>
+               <Defense> Will </Defense>
+               <HitComponents> +6 Charisma modifier.
++7 half your level.
++2 enhancement bonus.
+
+               </HitComponents>
+               <DamageComponents> +6 Charisma modifier.
++2 enhancement bonus.
++1 item bonus - Wand of Psychic Ravaging +1
+
+               </DamageComponents>
+            </Weapon>
             <Weapon name="Wand of Psychic Ravaging +1" >
                <RulesElement name="Wand of Psychic Ravaging +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3132" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3132&amp;ftype=1" charelem="1e99a4a0" legality="rules-legal" >
                   <RulesElement name="Eyebite" type="Power" internal-id="ID_FMP_POWER_1456" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1456" charelem="1e9945f0" legality="rules-legal" />
@@ -1689,6 +1844,26 @@
          <Power name="Stirring Shout" >
             <specific name="Power Usage" > Daily </specific>
             <specific name="Action Type" > Standard action </specific>
+            <Weapon name="Wand of Cold +2" >
+               <RulesElement name="Wand of Cold +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3123" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3123&amp;ftype=1" charelem="1e5a4f30" legality="rules-legal" >
+                  <RulesElement name="Ray of Frost" type="Power" internal-id="ID_FMP_POWER_1167" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1167" charelem="1e5a2c30" legality="rules-legal" />
+               </RulesElement>
+               <AttackBonus> 15 </AttackBonus>
+               <Damage> 2d6+9 </Damage>
+               <DamageType> Psychic </DamageType>
+               <AttackStat> Charisma </AttackStat>
+               <Defense> Will </Defense>
+               <HitComponents> +6 Charisma modifier.
++7 half your level.
++2 enhancement bonus.
+
+               </HitComponents>
+               <DamageComponents> +6 Charisma modifier.
++2 enhancement bonus.
++1 item bonus - Wand of Psychic Ravaging +1
+
+               </DamageComponents>
+            </Weapon>
             <Weapon name="Wand of Psychic Ravaging +1" >
                <RulesElement name="Wand of Psychic Ravaging +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3132" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3132&amp;ftype=1" charelem="1e99a4a0" legality="rules-legal" >
                   <RulesElement name="Eyebite" type="Power" internal-id="ID_FMP_POWER_1456" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1456" charelem="1e9945f0" legality="rules-legal" />
@@ -1768,6 +1943,24 @@
          <Power name="Blunder" >
             <specific name="Power Usage" > Encounter </specific>
             <specific name="Action Type" > Standard action </specific>
+            <Weapon name="Wand of Cold +2" >
+               <RulesElement name="Wand of Cold +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3123" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3123&amp;ftype=1" charelem="1e5a4f30" legality="rules-legal" >
+                  <RulesElement name="Ray of Frost" type="Power" internal-id="ID_FMP_POWER_1167" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1167" charelem="1e5a2c30" legality="rules-legal" />
+               </RulesElement>
+               <AttackBonus> 15 </AttackBonus>
+               <Damage> 1d6+8 </Damage>
+               <AttackStat> Charisma </AttackStat>
+               <Defense> Will </Defense>
+               <HitComponents> +6 Charisma modifier.
++7 half your level.
++2 enhancement bonus.
+
+               </HitComponents>
+               <DamageComponents> +6 Charisma modifier.
++2 enhancement bonus.
+
+               </DamageComponents>
+            </Weapon>
             <Weapon name="Wand of Psychic Ravaging +1" >
                <RulesElement name="Wand of Psychic Ravaging +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3132" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3132&amp;ftype=1" charelem="1e99a4a0" legality="rules-legal" >
                   <RulesElement name="Eyebite" type="Power" internal-id="ID_FMP_POWER_1456" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1456" charelem="1e9945f0" legality="rules-legal" />
@@ -1820,6 +2013,24 @@
          <Power name="Vigorous Cadence" >
             <specific name="Power Usage" > Daily </specific>
             <specific name="Action Type" > Standard action </specific>
+            <Weapon name="Wand of Cold +2" >
+               <RulesElement name="Wand of Cold +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3123" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3123&amp;ftype=1" charelem="1e5a4f30" legality="rules-legal" >
+                  <RulesElement name="Ray of Frost" type="Power" internal-id="ID_FMP_POWER_1167" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1167" charelem="1e5a2c30" legality="rules-legal" />
+               </RulesElement>
+               <AttackBonus> 15 </AttackBonus>
+               <Damage> 2d6+8 </Damage>
+               <AttackStat> Charisma </AttackStat>
+               <Defense> Fortitude </Defense>
+               <HitComponents> +6 Charisma modifier.
++7 half your level.
++2 enhancement bonus.
+
+               </HitComponents>
+               <DamageComponents> +6 Charisma modifier.
++2 enhancement bonus.
+
+               </DamageComponents>
+            </Weapon>
             <Weapon name="Wand of Psychic Ravaging +1" >
                <RulesElement name="Wand of Psychic Ravaging +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3132" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3132&amp;ftype=1" charelem="1e99a4a0" legality="rules-legal" >
                   <RulesElement name="Eyebite" type="Power" internal-id="ID_FMP_POWER_1456" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1456" charelem="1e9945f0" legality="rules-legal" />
@@ -1877,6 +2088,26 @@
          <Power name="Timely Distraction" >
             <specific name="Power Usage" > Encounter </specific>
             <specific name="Action Type" > Standard action </specific>
+            <Weapon name="Wand of Cold +2" >
+               <RulesElement name="Wand of Cold +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3123" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3123&amp;ftype=1" charelem="1e5a4f30" legality="rules-legal" >
+                  <RulesElement name="Ray of Frost" type="Power" internal-id="ID_FMP_POWER_1167" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1167" charelem="1e5a2c30" legality="rules-legal" />
+               </RulesElement>
+               <AttackBonus> 15 </AttackBonus>
+               <Damage> 2d8+9 </Damage>
+               <DamageType> Psychic </DamageType>
+               <AttackStat> Charisma </AttackStat>
+               <Defense> Will </Defense>
+               <HitComponents> +6 Charisma modifier.
++7 half your level.
++2 enhancement bonus.
+
+               </HitComponents>
+               <DamageComponents> +6 Charisma modifier.
++2 enhancement bonus.
++1 item bonus - Wand of Psychic Ravaging +1
+
+               </DamageComponents>
+            </Weapon>
             <Weapon name="Wand of Psychic Ravaging +1" >
                <RulesElement name="Wand of Psychic Ravaging +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3132" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3132&amp;ftype=1" charelem="1e99a4a0" legality="rules-legal" >
                   <RulesElement name="Eyebite" type="Power" internal-id="ID_FMP_POWER_1456" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1456" charelem="1e9945f0" legality="rules-legal" />
@@ -1935,6 +2166,25 @@
          <Power name="Symphony of Misfortune" >
             <specific name="Power Usage" > Daily </specific>
             <specific name="Action Type" > Standard action </specific>
+            <Weapon name="Wand of Cold +2" >
+               <RulesElement name="Wand of Cold +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3123" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3123&amp;ftype=1" charelem="1e5a4f30" legality="rules-legal" >
+                  <RulesElement name="Ray of Frost" type="Power" internal-id="ID_FMP_POWER_1167" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1167" charelem="1e5a2c30" legality="rules-legal" />
+               </RulesElement>
+               <AttackBonus> 15 </AttackBonus>
+               <Damage> 1d10+9 </Damage>
+               <AttackStat> Charisma </AttackStat>
+               <Defense> Will </Defense>
+               <HitComponents> +6 Charisma modifier.
++7 half your level.
++2 enhancement bonus.
+
+               </HitComponents>
+               <DamageComponents> +6 Charisma modifier.
++2 enhancement bonus.
++1 item bonus - Wand of Psychic Ravaging +1
+
+               </DamageComponents>
+            </Weapon>
             <Weapon name="Wand of Psychic Ravaging +1" >
                <RulesElement name="Wand of Psychic Ravaging +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3132" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3132&amp;ftype=1" charelem="1e99a4a0" legality="rules-legal" >
                   <RulesElement name="Eyebite" type="Power" internal-id="ID_FMP_POWER_1456" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1456" charelem="1e9945f0" legality="rules-legal" />
@@ -2016,6 +2266,22 @@
          <Power name="Pacifying Voice" >
             <specific name="Power Usage" > Encounter </specific>
             <specific name="Action Type" > Standard action </specific>
+            <Weapon name="Wand of Cold +2" >
+               <RulesElement name="Wand of Cold +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3123" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3123&amp;ftype=1" charelem="1e5a4f30" legality="rules-legal" >
+                  <RulesElement name="Ray of Frost" type="Power" internal-id="ID_FMP_POWER_1167" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1167" charelem="1e5a2c30" legality="rules-legal" />
+               </RulesElement>
+               <AttackBonus> 15 </AttackBonus>
+               <Damage>  </Damage>
+               <AttackStat> Charisma </AttackStat>
+               <Defense> Will </Defense>
+               <HitComponents> +6 Charisma modifier.
++7 half your level.
++2 enhancement bonus.
+
+               </HitComponents>
+               <DamageComponents> 
+               </DamageComponents>
+            </Weapon>
             <Weapon name="Wand of Psychic Ravaging +1" >
                <RulesElement name="Wand of Psychic Ravaging +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3132" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3132&amp;ftype=1" charelem="1e99a4a0" legality="rules-legal" >
                   <RulesElement name="Eyebite" type="Power" internal-id="ID_FMP_POWER_1456" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1456" charelem="1e9945f0" legality="rules-legal" />
@@ -2068,6 +2334,25 @@
          <Power name="Song of Storms" >
             <specific name="Power Usage" > Encounter </specific>
             <specific name="Action Type" > Standard action </specific>
+            <Weapon name="Wand of Cold +2" >
+               <RulesElement name="Wand of Cold +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3123" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3123&amp;ftype=1" charelem="1e5a4f30" legality="rules-legal" >
+                  <RulesElement name="Ray of Frost" type="Power" internal-id="ID_FMP_POWER_1167" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1167" charelem="1e5a2c30" legality="rules-legal" />
+               </RulesElement>
+               <AttackBonus> 15 </AttackBonus>
+               <Damage> 2d6+8 </Damage>
+               <DamageType> Lightning </DamageType>
+               <AttackStat> Charisma </AttackStat>
+               <Defense> Reflex </Defense>
+               <HitComponents> +6 Charisma modifier.
++7 half your level.
++2 enhancement bonus.
+
+               </HitComponents>
+               <DamageComponents> +6 Charisma modifier.
++2 enhancement bonus.
+
+               </DamageComponents>
+            </Weapon>
             <Weapon name="Wand of Psychic Ravaging +1" >
                <RulesElement name="Wand of Psychic Ravaging +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3132" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3132&amp;ftype=1" charelem="1e99a4a0" legality="rules-legal" >
                   <RulesElement name="Eyebite" type="Power" internal-id="ID_FMP_POWER_1456" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1456" charelem="1e9945f0" legality="rules-legal" />
@@ -2123,6 +2408,26 @@
          <Power name="Eyebite" >
             <specific name="Power Usage" > Encounter </specific>
             <specific name="Action Type" > Standard action </specific>
+            <Weapon name="Wand of Cold +2" >
+               <RulesElement name="Wand of Cold +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3123" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3123&amp;ftype=1" charelem="1e5a4f30" legality="rules-legal" >
+                  <RulesElement name="Ray of Frost" type="Power" internal-id="ID_FMP_POWER_1167" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1167" charelem="1e5a2c30" legality="rules-legal" />
+               </RulesElement>
+               <AttackBonus> 15 </AttackBonus>
+               <Damage> 1d6+9 </Damage>
+               <DamageType> Psychic </DamageType>
+               <AttackStat> Charisma </AttackStat>
+               <Defense> Will </Defense>
+               <HitComponents> +6 Charisma modifier.
++7 half your level.
++2 enhancement bonus.
+
+               </HitComponents>
+               <DamageComponents> +6 Charisma modifier.
++2 enhancement bonus.
++1 item bonus - Wand of Psychic Ravaging +1
+
+               </DamageComponents>
+            </Weapon>
             <Weapon name="Wand of Psychic Ravaging +1" >
                <RulesElement name="Wand of Psychic Ravaging +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3132" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3132&amp;ftype=1" charelem="1e99a4a0" legality="rules-legal" >
                   <RulesElement name="Eyebite" type="Power" internal-id="ID_FMP_POWER_1456" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1456" charelem="1e9945f0" legality="rules-legal" />
@@ -2173,6 +2478,94 @@
                </HitComponents>
                <DamageComponents> +6 Charisma modifier.
 +1 item bonus - Wand of Psychic Ravaging +1
+
+               </DamageComponents>
+            </Weapon>
+         </Power>
+
+         <Power name="Ghost Sound" >
+            <specific name="Power Usage" > At-Will </specific>
+            <specific name="Action Type" > Standard action </specific>
+         </Power>
+
+         <Power name="Prestidigitation" >
+            <specific name="Power Usage" > At-Will </specific>
+            <specific name="Action Type" > Standard action </specific>
+         </Power>
+
+         <Power name="Ray of Frost" >
+            <specific name="Power Usage" > Encounter </specific>
+            <specific name="Action Type" > Standard action </specific>
+            <Weapon name="Wand of Cold +2" >
+               <RulesElement name="Wand of Cold +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3123" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3123&amp;ftype=1" charelem="1e5a4f30" legality="rules-legal" >
+                  <RulesElement name="Ray of Frost" type="Power" internal-id="ID_FMP_POWER_1167" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1167" charelem="1e5a2c30" legality="rules-legal" />
+               </RulesElement>
+               <AttackBonus> 13 </AttackBonus>
+               <Damage> 1d6+7 </Damage>
+               <DamageType> Cold </DamageType>
+               <AttackStat> Intelligence </AttackStat>
+               <Defense> Fortitude </Defense>
+               <HitComponents> +4 Intelligence modifier.
++7 half your level.
++2 enhancement bonus.
+
+               </HitComponents>
+               <DamageComponents> +4 Intelligence modifier.
++2 enhancement bonus.
++1 item bonus - Wand of Cold +2
+
+               </DamageComponents>
+            </Weapon>
+            <Weapon name="Wand of Psychic Ravaging +1" >
+               <RulesElement name="Wand of Psychic Ravaging +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3132" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3132&amp;ftype=1" charelem="1e99a4a0" legality="rules-legal" >
+                  <RulesElement name="Eyebite" type="Power" internal-id="ID_FMP_POWER_1456" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1456" charelem="1e9945f0" legality="rules-legal" />
+               </RulesElement>
+               <AttackBonus> 12 </AttackBonus>
+               <Damage> 1d6+6 </Damage>
+               <DamageType> Cold </DamageType>
+               <AttackStat> Intelligence </AttackStat>
+               <Defense> Fortitude </Defense>
+               <HitComponents> +4 Intelligence modifier.
++7 half your level.
++1 enhancement bonus.
+
+               </HitComponents>
+               <DamageComponents> +4 Intelligence modifier.
++1 enhancement bonus.
++1 item bonus - Wand of Cold +2
+
+               </DamageComponents>
+            </Weapon>
+            <Weapon name="Master&apos;s Wand of Vicious Mockery +1" >
+               <RulesElement name="Master&apos;s Wand of Vicious Mockery +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_6746" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=6746&amp;ftype=1" charelem="1e99b580" legality="rules-legal" />
+               <AttackBonus> 12 </AttackBonus>
+               <Damage> 1d6+6 </Damage>
+               <DamageType> Cold </DamageType>
+               <AttackStat> Intelligence </AttackStat>
+               <Defense> Fortitude </Defense>
+               <HitComponents> +4 Intelligence modifier.
++7 half your level.
++1 enhancement bonus.
+
+               </HitComponents>
+               <DamageComponents> +4 Intelligence modifier.
++1 enhancement bonus.
++1 item bonus - Wand of Cold +2
+
+               </DamageComponents>
+            </Weapon>
+            <Weapon name="Unarmed" >
+               <AttackBonus> 11 </AttackBonus>
+               <Damage> 1d6+5 </Damage>
+               <DamageType> Cold </DamageType>
+               <AttackStat> Intelligence </AttackStat>
+               <Defense> Fortitude </Defense>
+               <HitComponents> +4 Intelligence modifier.
++7 half your level.
+
+               </HitComponents>
+               <DamageComponents> +4 Intelligence modifier.
++1 item bonus - Wand of Cold +2
 
                </DamageComponents>
             </Weapon>
@@ -3031,6 +3424,72 @@
       <loot count="1" equip-count="0" ShowPowerCard="1" >
          <RulesElement name="Cure Disease" type="Ritual" internal-id="ID_FMP_RITUAL_6" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=6" charelem="1e999a50" legality="rules-legal" />
       </loot>
+      <loot count="1" equip-count="1" ShowPowerCard="1" >
+         <RulesElement name="Peacemaker&apos;s Periapt +4" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3692" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3692&amp;ftype=1" charelem="1e5a43a0" legality="rules-legal" />
+      </loot>
+      <loot count="0" equip-count="-1" ShowPowerCard="1" >
+         <RulesElement name="Medic&apos;s Amulet +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_7061" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=7061&amp;ftype=1" charelem="1e5a40d0" legality="rules-legal" />
+      </loot>
+      <loot count="1" equip-count="1" ShowPowerCard="1" >
+         <RulesElement name="Magician&apos;s Ring (paragon tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3733" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3733&amp;ftype=1" charelem="1e5a5520" legality="rules-legal" />
+      </loot>
+      <loot count="1" equip-count="0" ShowPowerCard="1" >
+         <RulesElement name="Telepathic Bond" type="Ritual" internal-id="ID_FMP_RITUAL_229" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=229" charelem="1e5a2780" legality="rules-legal" />
+      </loot>
+      <loot count="1" equip-count="0" ShowPowerCard="1" >
+         <RulesElement name="Astral Guide" type="Ritual" internal-id="ID_FMP_RITUAL_168" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=168" charelem="1e5a24b0" legality="rules-legal" />
+      </loot>
+      <loot count="1" equip-count="0" ShowPowerCard="1" >
+         <RulesElement name="Enhance Vessel" type="Ritual" internal-id="ID_FMP_RITUAL_258" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=258" charelem="1e5a2500" legality="rules-legal" />
+      </loot>
+      <loot count="1" equip-count="0" ShowPowerCard="1" >
+         <RulesElement name="Banish Illusions" type="Ritual" internal-id="ID_FMP_RITUAL_255" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=255" charelem="1e5a7e10" legality="rules-legal" />
+      </loot>
+      <loot count="1" equip-count="0" ShowPowerCard="1" >
+         <RulesElement name="Arcane Barrier" type="Ritual" internal-id="ID_FMP_RITUAL_100" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=100" charelem="1e59fa80" legality="rules-legal" />
+      </loot>
+      <loot count="1" equip-count="0" ShowPowerCard="1" >
+         <RulesElement name="Elemental Transference" type="Ritual" internal-id="ID_FMP_RITUAL_172" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=172" charelem="1e5a6970" legality="rules-legal" />
+      </loot>
+      <loot count="1" equip-count="0" ShowPowerCard="1" >
+         <RulesElement name="Mark of Justice" type="Ritual" internal-id="ID_FMP_RITUAL_277" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=277" charelem="1e5a02a0" legality="rules-legal" />
+      </loot>
+      <loot count="1" equip-count="0" ShowPowerCard="1" >
+         <RulesElement name="Control Weather" type="Ritual" internal-id="ID_FMP_RITUAL_194" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=194" charelem="1e5a0c00" legality="rules-legal" />
+      </loot>
+      <loot count="1" equip-count="0" ShowPowerCard="1" >
+         <RulesElement name="Pyrotechnics" type="Ritual" internal-id="ID_FMP_RITUAL_200" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=200" charelem="1e5a61f0" legality="rules-legal" />
+      </loot>
+      <loot count="1" equip-count="0" ShowPowerCard="1" >
+         <RulesElement name="Lullaby" type="Ritual" internal-id="ID_FMP_RITUAL_199" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=199" charelem="1e5a3f40" legality="rules-legal" />
+      </loot>
+      <loot count="1" equip-count="0" ShowPowerCard="1" >
+         <RulesElement name="Knock" type="Ritual" internal-id="ID_FMP_RITUAL_22" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=22" charelem="1e5a0f20" legality="rules-legal" />
+      </loot>
+      <loot count="1" equip-count="0" ShowPowerCard="1" >
+         <RulesElement name="Magic Circle" type="Ritual" internal-id="ID_FMP_RITUAL_49" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=49" charelem="1e5a6560" legality="rules-legal" />
+      </loot>
+      <loot count="1" equip-count="0" ShowPowerCard="1" >
+         <RulesElement name="Self-Holding Bag" type="Ritual" internal-id="ID_FMP_RITUAL_336" url="http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=336" charelem="1e5a5570" legality="rules-legal" />
+      </loot>
+      <loot count="1" equip-count="1" ShowPowerCard="1" >
+         <RulesElement name="Wand of Cold +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3123" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3123&amp;ftype=1" charelem="1e5a4cb0" legality="rules-legal" />
+      </loot>
+      <loot count="0" equip-count="0" ShowPowerCard="1" >
+         <RulesElement name="Wand of Psychic Ravaging +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3132" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=3132&amp;ftype=1" charelem="1e5a5980" legality="rules-legal" />
+      </loot>
+      <loot count="5" equip-count="0" ShowPowerCard="1" >
+         <RulesElement name="Unguent of Darkvision (paragon tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_4044" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=4044&amp;ftype=1" charelem="1e5a3770" legality="rules-legal" />
+      </loot>
+      <loot count="1" equip-count="0" ShowPowerCard="1" >
+         <RulesElement name="Blackgate Rune (paragon tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_4869" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=4869&amp;ftype=1" charelem="1e5a10b0" legality="rules-legal" />
+      </loot>
+      <loot count="1" equip-count="0" ShowPowerCard="1" >
+         <RulesElement name="Nail of Sealing (heroic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_4040" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=4040&amp;ftype=1" charelem="1e5a09d0" legality="rules-legal" />
+      </loot>
+      <loot count="10" equip-count="0" ShowPowerCard="1" >
+         <RulesElement name="Freezing Arrow +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_6239" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=6239&amp;ftype=1" charelem="1e5a70a0" legality="rules-legal" />
+      </loot>
    </Level>
 
 
@@ -3051,7 +3510,7 @@
       Given
    </textstring>
    <textstring name="_INTERNAL_MainHandWeapon" >
-      Wand of Psychic Ravaging +1
+      Wand of Cold +2
    </textstring>
    <textstring name="LOOTNOTE_ID_FMP_ARMOR_7" >
       
@@ -3192,10 +3651,6 @@
     &lt;WeaponSelections /&gt;
   &lt;/PowerCardBasic&gt;
   &lt;PowerCardBasic Visibility=&quot;Visible&quot; IsInSpellbook=&quot;False&quot; Blank=&quot;false&quot;&gt;
-    &lt;RuleID&gt;ID_FMP_POWER_11559&lt;/RuleID&gt;
-    &lt;WeaponSelections /&gt;
-  &lt;/PowerCardBasic&gt;
-  &lt;PowerCardBasic Visibility=&quot;Visible&quot; IsInSpellbook=&quot;False&quot; Blank=&quot;false&quot;&gt;
     &lt;RuleID&gt;ID_FMP_POWER_4989&lt;/RuleID&gt;
     &lt;WeaponSelections /&gt;
   &lt;/PowerCardBasic&gt;
@@ -3233,6 +3688,14 @@
   &lt;/PowerCardUtility&gt;
   &lt;PowerCardUtility Visibility=&quot;Visible&quot; IsInSpellbook=&quot;False&quot; Blank=&quot;false&quot;&gt;
     &lt;RuleID&gt;ID_FMP_POWER_12512&lt;/RuleID&gt;
+    &lt;WeaponSelections /&gt;
+  &lt;/PowerCardUtility&gt;
+  &lt;PowerCardUtility Visibility=&quot;Visible&quot; IsInSpellbook=&quot;False&quot; Blank=&quot;false&quot;&gt;
+    &lt;RuleID&gt;ID_FMP_POWER_1217&lt;/RuleID&gt;
+    &lt;WeaponSelections /&gt;
+  &lt;/PowerCardUtility&gt;
+  &lt;PowerCardUtility Visibility=&quot;Visible&quot; IsInSpellbook=&quot;False&quot; Blank=&quot;false&quot;&gt;
+    &lt;RuleID&gt;ID_FMP_POWER_1930&lt;/RuleID&gt;
     &lt;WeaponSelections /&gt;
   &lt;/PowerCardUtility&gt;
   &lt;PowerCardNormalItem Visibility=&quot;Hidden&quot; IsInSpellbook=&quot;False&quot;&gt;
@@ -3634,6 +4097,16 @@
   &lt;PowerCardMagicItem Visibility=&quot;Visible&quot; IsInSpellbook=&quot;False&quot;&gt;
     &lt;CharLootID xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
       &lt;baseID&gt;ID_FMP_MAGIC_ITEM_1134&lt;/baseID&gt;
+    &lt;/CharLootID&gt;
+  &lt;/PowerCardMagicItem&gt;
+  &lt;PowerCardMagicItem Visibility=&quot;Visible&quot; IsInSpellbook=&quot;False&quot;&gt;
+    &lt;CharLootID xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
+      &lt;baseID&gt;ID_FMP_MAGIC_ITEM_3692&lt;/baseID&gt;
+    &lt;/CharLootID&gt;
+  &lt;/PowerCardMagicItem&gt;
+  &lt;PowerCardMagicItem Visibility=&quot;Visible&quot; IsInSpellbook=&quot;False&quot;&gt;
+    &lt;CharLootID xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
+      &lt;baseID&gt;ID_FMP_MAGIC_ITEM_3733&lt;/baseID&gt;
     &lt;/CharLootID&gt;
   &lt;/PowerCardMagicItem&gt;
 &lt;/PowerCards&gt;
@@ -4140,6 +4613,30 @@
       false
    </textstring>
    <textstring name="USAGE_Winter&apos;s Shroud" >
+      false
+   </textstring>
+   <textstring name="USAGE_Peacemaker&apos;s Periapt +4" >
+      false
+   </textstring>
+   <textstring name="USAGE_Magician&apos;s Ring (paragon tier)" >
+      false
+   </textstring>
+   <textstring name="USAGE_Wand of Cold +2" >
+      false
+   </textstring>
+   <textstring name="USAGE_Ray of Frost" >
+      false
+   </textstring>
+   <textstring name="USAGE_Unguent of Darkvision (paragon tier)" >
+      false
+   </textstring>
+   <textstring name="USAGE_Blackgate Rune (paragon tier)" >
+      false
+   </textstring>
+   <textstring name="USAGE_Nail of Sealing (heroic tier)" >
+      false
+   </textstring>
+   <textstring name="USAGE_Freezing Arrow +2" >
       false
    </textstring>
 
