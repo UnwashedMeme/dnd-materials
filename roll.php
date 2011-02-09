@@ -11,12 +11,13 @@ $roll = new Roll();
 $roll->weapon = Roll::WEAP_SUB_DAGGER_2; // default
 
 // process command line arguments
-$opts = getopt('csbmhw:');
+$opts = getopt('csbmhw:3');
 $usage = "USAGE: $argv[0]\n" .
   "  [-c] Ammonia has Combat Advantage\n" .
   "  [-s] Ammonia deals Sneak Attack damage\n" .
   "  [-b] Ammonia deals Brutal Scoundrel damage (e.g. Nasty Backswing)\n" .
   "  [-m] Ammonia is using Mediation of the Blade\n" .
+  "  [-3] Ammonia is dealing 3[W] instead of her usual 1[W]\n" . 
   "  [-h] Displays this help message\n" .
   "  [-w <weapon>] Ammonia's weapon (defaults to 'dag'). Weapons: \n" .
   "  \tdag = Subtle Dagger +2\n" . 
@@ -27,6 +28,7 @@ $help = false;
 if (array_key_exists('c', $opts)) $roll->ca = true;
 if (array_key_exists('s', $opts)) $roll->sneak = true;
 if (array_key_exists('b', $opts)) $roll->brutal = true;
+if (array_key_exists('3', $opts)) $roll->multiplier = 3;
 if (array_key_exists('m', $opts)) $roll->meditation = true;
 if (array_key_exists('h', $opts)) $help = true;
 if (array_key_exists('w', $opts)) {
@@ -67,6 +69,9 @@ class Roll {
 
   /** The weapon being used; see the WEAP_ constants. */
   public $weapon = null;
+
+  /** The 'x' in the x[W] damage. */
+  public $multiplier = 1;
 
   /**
    * Class constructor.
@@ -125,7 +130,10 @@ class Roll {
     }
     else throw new Exception("Invalid weapon: $this->weapon");
     $qATK["base attack ($name)"] = $baseATK;
-    $qDMG["$name damage (1d$sides)"] = self::roll(1, $sides, $crit);
+    $damKey = "$name damage ($this->multiplier" . "d$sides)";
+    $qDMG[$damKey] = 0;
+    for ($i = 0; $i < $this->multiplier; $i++)
+      $qDMG[$damKey] += self::roll(1, $sides, $crit);
     $qDMG["$name damage (base)"] = $baseDMG;
     if ($this->brutal) $qDMG['brutal scoundral'] = 4;
     if ($this->ca) {
