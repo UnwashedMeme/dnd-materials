@@ -110,7 +110,7 @@ class Roll {
       $name = "subtle dagger +2";
       $sides = 4;
       if ($this->meditation) $sides = 6;
-      $baseATK = 21;
+      $baseATK = 22;
       $baseDMG = 8;
       if ($this->ca) $qDMG["subtle weapon"] = 2;
       if ($crit) $qDMG['critical damage (2d6)'] = self::roll(2, 6);
@@ -118,13 +118,13 @@ class Roll {
     elseif ($this->weapon == self::WEAP_DIS_SHURIKEN_2) {
       $name = "distance shuriken +2";
       $sides = 6;
-      $baseATK = 20;
+      $baseATK = 21;
       $baseDMG = 8;
     }
     elseif ($this->weapon == self::WEAP_VIC_SHORT_2) {
       $name = "vicious short sword +2";
       $sides = 6;
-      $baseATK = 20;
+      $baseATK = 21;
       $baseDMG = 8;
       if ($crit) $qDMG['critical damage (2d12)'] = self::roll(2, 12);
     }
